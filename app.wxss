@@ -1,0 +1,6 @@
+/**app.wxss**/
+page{
+ 
+  /* background: #288eff; */
+  font-size: 40rpx;
+}
