@@ -1,3 +1,11 @@
-<view>
-  
+<!--index.wxml-->
+<view class="container">
+  <view class='header-container'>
+    <view class='title-container'>
+      
+    </view>
+  </view>
+  <view class='main-container'>
+    <view class='form-contaienr'></view>
+  </view>
 </view>

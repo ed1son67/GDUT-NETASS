@@ -1,12 +1,5 @@
 /**index.wxss**/
-.container {
-  margin: 0;
-  padding: 0;
-  border: none;
-  height: 100vh;
-  width: 100%;
-  background-color: #f7f7f7;
-}
+
 .header-container {
   color: #fff;
   margin: 0 auto;
@@ -27,7 +20,7 @@
 .title-container {
   font-size: 56rpx;
   position: absolute;
-  top: 50rpx;
+  top: 80rpx;
   left: 30rpx;
   line-height: 1.5em;
   font-weight: 500;
@@ -49,3 +42,5 @@
   background-color: #fff;
   box-shadow: #c7c7c7 0px 0px 10rpx;
 }
+
+

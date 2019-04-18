@@ -1,15 +1,16 @@
 <!--index.wxml-->
 <view class="container">
   <view class='header-container'>
-  <view class='title-container'>
-    <view>欢迎使用</view>
-    <view>工大网络助手</view>
-    <view class='small-title'>端口查询 · 常见故障 · 自助报障</view>
+    <view class='title-container'>
+      <view>欢迎使用</view>
+      <view>工大网络助手</view>
+      <view class='small-title'>端口查询 · 常见故障 · 自助报障</view>
+    </view>
+
+    <image src='../../static/images/icon.png'></image>
   </view>
-  
-  <image  src='../../static/images/icon.png'></image>
-  </view>
-  <view class='main-container'>  
+ 
+  <view class='main-container'>
     <view class='item'>
       端口查询
     </view>
@@ -19,6 +20,8 @@
     <view class='item'>
       游客报修
     </view>
-    <!-- <web-view src="http://wechat.dotease.cn:8008/Home/AddFaultWork"></web-view> -->
+
   </view>
 </view>
+
+<!-- <web-view src="http://wechat.dotease.cn:8008/Home/AddFaultWork"></web-view> -->
