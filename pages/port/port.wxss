@@ -12,12 +12,28 @@
 .main-container {
   position: absolute;
   height: 500rpx;
-  top: 300rpx;
+  top: 280rpx;
   border-radius: 20rpx;
   display: flex;
   background-color: #fff;
-  left: 30rpx;
-  right: 30rpx;
+  left: 20rpx;
+  right: 20rpx;
   box-shadow: #c7c7c7 0px 0px 10rpx;
 
 }
+.form-container {
+  
+}
+.button-container {
+  position:absolute;
+  top: 450rpx;
+}
+.title-container {
+  text-align: center;
+  padding: 40rpx;
+  font-size: 46rpx;
+  letter-spacing: 4rpx;
+ 
+}
+
+

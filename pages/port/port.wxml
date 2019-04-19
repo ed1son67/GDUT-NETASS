@@ -2,10 +2,15 @@
 <view class="container">
   <view class='header-container'>
     <view class='title-container'>
-      
+      <view>网络端口查询</view>
     </view>
   </view>
   <view class='main-container'>
-    <view class='form-contaienr'></view>
+    <view class='form-contaienr'>
+      
+    </view>
+    <view class='button-container'>
+      <button>查询端口</button>
+    </view>
   </view>
 </view>

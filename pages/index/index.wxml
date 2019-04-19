@@ -6,7 +6,6 @@
       <view>工大网络助手</view>
       <view class='small-title'>端口查询 · 常见故障 · 自助报障</view>
     </view>
-
     <image src='../../static/images/icon.png'></image>
   </view>
  
