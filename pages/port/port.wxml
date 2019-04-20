@@ -19,7 +19,7 @@
             bindchange="buildingChange"
             bindcolumnchange="buildingColumnChange"
           >
-          请选择楼栋
+           {{building}}
           </picker>
         </view>
       </view>
@@ -28,7 +28,7 @@
           房间号：
         </view>
         <view class='item'>
-          <input value='{{room}}'></input>
+          <input value='{{room}}' placeholder='请输入房间号'></input>
         </view>
       </view>
        <view class='form-item'>
@@ -41,7 +41,7 @@
             range='{{bedData}}'
             bindchange="bedChange"
           >
-            {{bedData[bedIndex]}}
+            {{bed}}
           </picker>
         </view>
       </view>

@@ -19,15 +19,42 @@
   left: 20rpx;
   right: 20rpx;
   box-shadow: #c7c7c7 0px 0px 10rpx;
-
+  flex-direction: column;
+  justify-content: center;
 }
-.form-container {
+.form-contaienr {
+ height: auto;
+ margin: 0 auto;
+}
+.form-item {
+  display: flex;
+  padding: 12rpx 0;
+  margin: 0 auto;
+  align-items: center;
+}
+.label {
+  width: 180rpx;
+  text-align: left;
+}
+.item {
   
+  text-align: left;
+  width: 350rpx;
 }
 .button-container {
   position:absolute;
   top: 450rpx;
-  
+  left: 0;
+  right: 0;
+}
+.button-container button {
+  width: 450rpx;
+  border-radius: 40rpx;
+  font-size: 36rpx;
+  background-color: #2a83ff;
+  color: #fff;
+  border: none;
+  letter-spacing: 4rpx;
 }
 .title-container {
   text-align: center;
