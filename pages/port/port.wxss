@@ -27,13 +27,13 @@
 .button-container {
   position:absolute;
   top: 450rpx;
+  
 }
 .title-container {
   text-align: center;
   padding: 40rpx;
   font-size: 46rpx;
   letter-spacing: 4rpx;
- 
 }
 
 

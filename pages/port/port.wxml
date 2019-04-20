@@ -7,7 +7,44 @@
   </view>
   <view class='main-container'>
     <view class='form-contaienr'>
-      
+      <view class='form-item'>
+        <view class='label'>
+          楼栋：
+        </view>
+        <view class='item'>
+          <picker 
+            value='{{buildingIndex}}'
+            range='{{buildingData}}'
+            mode="multiSelector"
+            bindchange="buildingChange"
+            bindcolumnchange="buildingColumnChange"
+          >
+          请选择楼栋
+          </picker>
+        </view>
+      </view>
+       <view class='form-item'>
+        <view class='label'>
+          房间号：
+        </view>
+        <view class='item'>
+          <input value='{{room}}'></input>
+        </view>
+      </view>
+       <view class='form-item'>
+        <view class='label'>
+          床号：
+        </view>
+        <view class='item'>
+          <picker 
+            value='{{bedIndex}}'
+            range='{{bedData}}'
+            bindchange="bedChange"
+          >
+            {{bedData[bedIndex]}}
+          </picker>
+        </view>
+      </view>
     </view>
     <view class='button-container'>
       <button>查询端口</button>

@@ -5,9 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    buildingIndex: [0, 0],
+    buildingData: [
+      ['生活西区', '生活东区'], ['西一', '西二', '西三', '西四', '西五', '西六', '西七', '西八','西九','西十','西十一','西十二','西十三','西十四']
+    ],
+    bedIndex: 0,
+    bedData: ['一号床', '二号床', '三号床', '四号床']
   },
+  /**
+   * 床号改变函数
+   */
+  bedChange: function (e) {
+    this.setData({
+      bedIndex: e.detail.value
+    })
+  },
+  /**
+   * 楼栋列改变触发函数
+   */
+  buildingColumnChange: function(e) {
+    let column = e.detail.column;
+    let colunmData = [['西一', '西二', '西三', '西四', '西五', '西六', '西七', '西八', '西九', '西十', '西十一', '西十二', '西十三', '西十四'], ['东一', '东二', '东三', '东四', '东五', '东六', '东七', '东八', '东九', '东十', '东十二', '东十三', '东十四']];
+    let data = [['生活西区', '生活东区']]
+    console.log(e.detail);
 
+    if (column === 0) {
+      data[1] = colunmData[e.detail.value];
+
+      this.setData({
+        buildingData: data
+      })
+    }
+  },
+  /**
+   * 楼栋值改变触发函数
+   */
+  buildingChange: function(e) {
+    console.log(e.detail.value)
+    this.setData({
+      buildingIndex: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
