@@ -51,10 +51,11 @@
   width: 450rpx;
   border-radius: 40rpx;
   font-size: 36rpx;
-  background-color: #2a83ff;
   color: #fff;
   border: none;
   letter-spacing: 4rpx;
+  background-image: linear-gradient(to right, #b224ef 0%, #227bff 100%);
+  
 }
 .title-container {
   text-align: center;
