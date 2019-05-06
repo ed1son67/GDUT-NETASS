@@ -28,7 +28,7 @@
           房间号：
         </view>
         <view class='item'>
-          <input value='{{room}}' placeholder='请输入房间号'></input>
+          <input bindinput='roomChange' placeholder='请输入房间号' placeholder-style='color: #000;'></input>
         </view>
       </view>
        <view class='form-item'>
@@ -47,7 +47,7 @@
       </view>
     </view>
     <view class='button-container'>
-      <button>查询端口</button>
+      <button bindtap='seachPort'>查询端口</button>
     </view>
   </view>
 </view>

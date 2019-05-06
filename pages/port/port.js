@@ -12,7 +12,8 @@ Page({
     building: '请选择楼栋',
     bedIndex: 0,
     bedData: ['一号床', '二号床', '三号床', '四号床'],
-    bed: '请选择床号'
+    bed: '请选择床号',
+    room: ''
   },
   /**
    * 床号改变函数
@@ -52,10 +53,53 @@ Page({
     })
   },
   /**
+   * 房间号改变函数
+   */
+  roomChange: function(e) {
+    this.setData({
+      room: e.detail.value
+    })
+  },
+  /**
+   * 搜索端口函数
+   */
+  seachPort: function() {
+    wx.showLoading({
+      title: '查询中',
+    })
+    
+    let queryData = {
+      bed: this.data.bed,
+      room: this.data.room,
+      building: this.data.building
+    }
+    
+    wx.request({
+      url: 'http://localhost:8000/port',
+      method: 'POST',
+      data: queryData,
+      success(res) {
+        wx.hideLoading();
+        wx.showModal({
+          title: '您的端口号是：',
+          content: res.data.port,
+        })  
+        console.log(res);      
+      },
+      fail(err) {
+        wx.hideLoading();
+        console.log(err);
+      }
+      
+    });
+  },
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // wx.showLoading({
+    //   title: '查询中',
+    // })
   },
 
   /**
