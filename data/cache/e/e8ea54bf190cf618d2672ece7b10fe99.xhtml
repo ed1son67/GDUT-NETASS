@@ -1,0 +1,96 @@
+
+<h2 class="sectionedit1" id="位置">位置</h2>
+<div class="level2">
+
+<p>
+运维管理 → 事件管理 → 事件导入
+</p>
+
+<p>
+<a href="/_detail/%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C/it%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E4%BD%8D%E7%BD%AE.png?id=%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C%3Ait%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%3A%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5" class="media" title="网管员手册:it服务综合管理平台:批量导入位置.png"><img src="/_media/%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C/it%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E4%BD%8D%E7%BD%AE.png?w=400&amp;tok=c0456a" class="mediacenter" alt="" width="400" /></a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "位置" [1-145] -->
+<h2 class="sectionedit2" id="步骤">步骤</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT2 SECTION "步骤" [146-165] -->
+<h3 class="sectionedit3" id="准备">准备</h3>
+<div class="level3">
+
+<p>
+为了要进行批量导入，在开始之前你需要一份来自 IMC 系统导出的数据，通常导出的是当天新开户的用户名单。
+</p>
+
+<p>
+IMC 系统批量导出的教程请见：<a href="/%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C/dr.com%E8%AE%A4%E8%AF%81%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F/%E6%96%B0%E5%BC%80%E6%88%B7%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA" class="wikilink1" title="网管员手册:dr.com认证计费系统:新开户导入导出">新开户导入导出</a>
+</p>
+
+<p>
+另外，你还需要 IT 平台的事件导入模板，可以在导入事件这个页面中通过下载模板进行下载。
+</p>
+
+<p>
+下载地址：<a href="http://helpdesk.gdut.edu.cn/portal/portal/itsm/incident/template/event_template.xls" class="urlextern" title="http://helpdesk.gdut.edu.cn/portal/portal/itsm/incident/template/event_template.xls" rel="nofollow">event_template.xls</a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "准备" [166-710] -->
+<h3 class="sectionedit4" id="数据整理">数据整理</h3>
+<div class="level3">
+
+<p>
+数据需要先行整理成 IT 平台能识别的格式才可以进行导入，数据的格式在上面下载到的 xls 文件中有说明。
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> 序号 </th><th class="col1 leftalign"> 学号       </th><th class="col2"> 姓名 </th><th class="col3 leftalign"> 校区      </th><th class="col4"> 楼栋 </th><th class="col5"> 宿舍 </th><th class="col6"> 端口编号 </th><th class="col7 leftalign"> 类型   </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 leftalign"> 1   </td><td class="col1"> 3115000001 </td><td class="col2"> 张三 </td><td class="col3"> 大学城校区 </td><td class="col4"> 东一 </td><td class="col5"> 101 </td><td class="col6 leftalign"> A2D001  </td><td class="col7"> 新开户 </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [878-1055] -->
+<p>
+<a href="/_detail/%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C/it%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E6%A0%BC%E5%BC%8F.png?id=%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C%3Ait%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%3A%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5" class="media" title="网管员手册:it服务综合管理平台:批量导入格式.png"><img src="/_media/%E7%BD%91%E7%AE%A1%E5%91%98%E6%89%8B%E5%86%8C/it%E6%9C%8D%E5%8A%A1%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/%E6%89%B9%E9%87%8F%E5%AF%BC%E5%85%A5%E6%A0%BC%E5%BC%8F.png" class="mediacenter" alt="" /></a>
+</p>
+
+<p>
+序号从 1 开始递增，校区统一填写 <code>大学城校区</code> 不需要修改，类型填写 <code>新开户</code> 即可
+</p>
+
+<p>
+其他信息根据实际情况复制进去即可！
+</p>
+
+<p>
+需要注意的是，尽量保持这份表格的整洁，不要在后面突然多了一个数据，也进行不要产生空行、空格，这会导致数据批量导入失败。
+</p>
+
+<p>
+此外，在进行数据的处理的时候，可以适当检查一下有没有错误的项目，如果有，那么就要在 IMC 系统上面进行修改，然后在修改导入。
+</p>
+
+</div>
+<!-- EDIT4 SECTION "数据整理" [711-1663] -->
+<h3 class="sectionedit6" id="开始导入">开始导入</h3>
+<div class="level3">
+
+<p>
+进行完数据处理之后，保存工作表，然后在 IT 平台上选择这个工作表，确认导入即可。
+</p>
+
+<p>
+导入后，系统会提示你导入了多少条数据，有没有数据失败导入的。
+</p>
+
+<p>
+如果有，那么可能就需要自己去检查错误的原因，然后再导入一次或者手动加入了。
+</p>
+
+</div>
+<!-- EDIT6 SECTION "开始导入" [1664-] -->

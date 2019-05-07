@@ -1,0 +1,17 @@
+<a href="http://www.ss64.com/nt/for.html"><span class="kw1">for</span></a> /l <span class="sy0">%%</span><span class="re3">a</span> <a href="http://www.ss64.com/nt/in.html"><span class="kw1">in</span></a> <span class="sy0">(</span>1,1,10<span class="sy0">)</span> <a href="http://www.ss64.com/nt/do.html"><span class="kw1">do</span></a> <span class="sy0">(</span>
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\Class\<span class="co3">^{</span>4D36E972-E325-11CE-BFC1-08002BE10318<span class="co3">^}</span>\000<span class="sy0">%%</span><span class="re3">a</span> /v NetworkAddress /f
+<span class="sy0">)</span>
+<a href="http://www.ss64.com/nt/for.html"><span class="kw1">for</span></a> /l <span class="sy0">%%</span><span class="re3">a</span> <a href="http://www.ss64.com/nt/in.html"><span class="kw1">in</span></a> <span class="sy0">(</span>10,1,40<span class="sy0">)</span> <a href="http://www.ss64.com/nt/do.html"><span class="kw1">do</span></a> <span class="sy0">(</span>
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\Class\<span class="co3">^{</span>4D36E972-E325-11CE-BFC1-08002BE10318<span class="co3">^}</span>\00<span class="sy0">%%</span><span class="re3">a</span> /v NetworkAddress /f
+<span class="sy0">)</span>
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;本地连接&quot; disable 
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;本地连接&quot; enable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;以太网&quot; disable 
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;以太网&quot; enable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;WLAN&quot; disable 
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;WLAN&quot; enable 
+&nbsp;
+netsh winsock reset

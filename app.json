@@ -26,7 +26,6 @@
         "selectedIconPath": "./static/images/port_select.png",
         "text": "端口查询"
       },
-
       {
         "pagePath": "pages/logs/logs",
         "iconPath": "./static/images/question_unselect.png",

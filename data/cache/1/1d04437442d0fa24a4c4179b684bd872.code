@@ -1,0 +1,38 @@
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ===============MAC修复开始=======================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ==============会显示错误或者乱码=================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ==============请不用理会=========================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ==============按任意键开始修复===================
+<a href="http://www.ss64.com/nt/pause.html"><span class="kw3">pause</span></a>
+&nbsp;
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> &quot;恢复MAC地址&quot;
+<a href="http://www.ss64.com/nt/for.html"><span class="kw1">for</span></a> /l <span class="sy0">%%</span><span class="re3">a</span> <a href="http://www.ss64.com/nt/in.html"><span class="kw1">in</span></a> <span class="sy0">(</span>1,1,10<span class="sy0">)</span> <a href="http://www.ss64.com/nt/do.html"><span class="kw1">do</span></a> <span class="sy0">(</span>
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\Class\<span class="co3">^{</span>4D36E972-E325-11CE-BFC1-08002BE10318<span class="co3">^}</span>\000<span class="sy0">%%</span><span class="re3">a</span> /v NetworkAddress /f
+<span class="sy0">)</span>
+<a href="http://www.ss64.com/nt/for.html"><span class="kw1">for</span></a> /l <span class="sy0">%%</span><span class="re3">a</span> <a href="http://www.ss64.com/nt/in.html"><span class="kw1">in</span></a> <span class="sy0">(</span>10,1,40<span class="sy0">)</span> <a href="http://www.ss64.com/nt/do.html"><span class="kw1">do</span></a> <span class="sy0">(</span>
+reg delete HKLM\SYSTEM\CurrentControlSet\Control\Class\<span class="co3">^{</span>4D36E972-E325-11CE-BFC1-08002BE10318<span class="co3">^}</span>\00<span class="sy0">%%</span><span class="re3">a</span> /v NetworkAddress /f
+<span class="sy0">)</span>
+&nbsp;
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> &quot;重启网卡&quot; <span class="sy0">&gt;&gt;</span> log.txt
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;本地连接&quot; disable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;本地连接&quot; enable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;以太网&quot; disable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;以太网&quot; enable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;WLAN&quot; disable 
+&nbsp;
+netsh interface <a href="http://www.ss64.com/nt/set.html"><span class="kw3">set</span></a> interface &quot;WLAN&quot; enable 
+&nbsp;
+cls
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ===============MAC修复完成=======================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> ==============按任意键退出！=====================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<span class="sy0">@</span><a href="http://www.ss64.com/nt/echo.html"><span class="kw3">echo</span></a> =================================================
+<a href="http://www.ss64.com/nt/pause.html"><span class="kw3">pause</span></a>

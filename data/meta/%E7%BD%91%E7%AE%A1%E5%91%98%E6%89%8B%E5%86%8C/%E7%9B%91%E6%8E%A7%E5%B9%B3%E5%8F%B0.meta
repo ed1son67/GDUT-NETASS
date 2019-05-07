@@ -1,0 +1,13 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1470300410;s:8:"modified";i:1507032905;}s:7:"creator";s:8:"Long Hao";s:4:"user";s:9:"imlonghao";s:11:"last_change";a:8:{s:4:"date";i:1507032905;s:2:"ip";s:14:"183.29.155.225";s:4:"type";s:1:"E";s:2:"id";s:28:"网管员手册:监控平台";s:4:"user";s:10:"3115005646";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:29;}s:11:"contributor";a:1:{i:3115005646;s:9:"打杂的";}s:8:"relation";a:2:{s:5:"media";a:1:{s:32:"网管员手册:监控平台.png";b:1;}s:10:"firstimage";s:32:"网管员手册:监控平台.png";}s:5:"title";s:6:"简介";s:11:"description";a:2:{s:15:"tableofcontents";a:3:{i:0;a:4:{s:3:"hid";s:6:"简介";s:5:"title";s:6:"简介";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:1;a:4:{s:3:"hid";s:6:"地址";s:5:"title";s:6:"地址";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:12:"帐号密码";s:5:"title";s:15:"帐号 / 密码";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:278:"简介
+
+目前，我们学校使用 Ipswitch 公司开发的 WhatsUp Gold 进行校园内交换机、汇聚等等的网络设备的监控。
+
+地址
+
+<http://netview.gdut.edu.cn/>
+
+校园网访问 IP: 222.200.99.226 222.200.98.42
+
+外网访问 IP：59.41.253.19
+
+帐号 / 密码";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1470300410;s:8:"modified";i:1507032905;}s:7:"creator";s:8:"Long Hao";s:4:"user";s:9:"imlonghao";s:11:"last_change";a:8:{s:4:"date";i:1507032905;s:2:"ip";s:14:"183.29.155.225";s:4:"type";s:1:"E";s:2:"id";s:28:"网管员手册:监控平台";s:4:"user";s:10:"3115005646";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:29;}s:11:"contributor";a:1:{i:3115005646;s:9:"打杂的";}}}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://gdutnic.com/lib/exe/css.php?s=feed" type="text/css"?>
+<rss version="2.0">
+    <channel>
+        <title>广东工业大学网管队</title>
+        <description></description>
+        <link>http://gdutnic.com/</link>
+        <lastBuildDate>Mon, 29 Apr 2019 15:56:45 +0800</lastBuildDate>
+        <generator>FeedCreator 1.7.2-ppt DokuWiki</generator>
+        <image>
+            <url>http://gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico</url>
+            <title>广东工业大学网管队</title>
+            <link>http://gdutnic.com/</link>
+        </image>
+    </channel>
+</rss>

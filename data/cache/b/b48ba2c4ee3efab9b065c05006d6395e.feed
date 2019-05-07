@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.gdutnic.com/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="https://www.gdutnic.com/feed.php">
+        <title>广东工业大学网管队</title>
+        <description></description>
+        <link>https://www.gdutnic.com/</link>
+        <image rdf:resource="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico" />
+       <dc:date>2016-08-12T22:17:29+08:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="https://www.gdutnic.com/sidebar?rev=1470321398&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/start?rev=1470292148&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico">
+        <title>广东工业大学网管队</title>
+        <link>https://www.gdutnic.com/</link>
+        <url>https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico</url>
+    </image>
+    <item rdf:about="https://www.gdutnic.com/sidebar?rev=1470321398&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T22:36:38+08:00</dc:date>
+        <title>sidebar</title>
+        <link>https://www.gdutnic.com/sidebar?rev=1470321398&amp;do=diff</link>
+        <description>*  首页
+	*  用户手册
+			*  报装流程
+			*  续费流程
+			*  计费策略 余额查询
+			*  更换 补偿 退费 转账流程
+
+	*  网管员手册
+			*  IT服务综合管理平台
+					*  新建事件
+					*  批量导入
+					*  事件处理
+					*  事件查询
+					*  值班请假
+					*  值班补班
+					*  值班调班
+
+			*  监控平台
+					*  日常使用
+					*  常用工具</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/start?rev=1470292148&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T14:29:08+08:00</dc:date>
+        <title>start</title>
+        <link>https://www.gdutnic.com/start?rev=1470292148&amp;do=diff</link>
+        <description>Hi, 这里是广东工业大学（大学城校区）网管队的在线手册
+
+本手册主要分为用户手册以及网管员手册
+
+手册尚未完成，部分内容可能有批漏，敬请原谅
+
+用户手册
+
+用户手册允许任何人进行查阅</description>
+    </item>
+</rdf:RDF>

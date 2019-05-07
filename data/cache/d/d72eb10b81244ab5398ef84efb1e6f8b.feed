@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.gdutnic.com/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="https://www.gdutnic.com/feed.php">
+        <title>广东工业大学网管队</title>
+        <description></description>
+        <link>https://www.gdutnic.com/</link>
+        <image rdf:resource="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico" />
+       <dc:date>2016-08-30T23:00:21+08:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/691?rev=1472537075&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A691.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472537059&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/629?rev=1472537028&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E5%81%9C%E6%9C%BA.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536951&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80?rev=1472536527&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A1.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536159&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3Ax.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472535936&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472534894&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/sidebar?rev=1472403294&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95?rev=1472304428&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A629.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472293602&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/623?rev=1472293514&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A623.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472292811&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85?rev=1472288476&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-linux.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288170&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-windows.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288155&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-apple.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472286566&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Alinux_%E5%AE%A2%E6%88%B7%E7%AB%AF.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280963&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280259&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%9F%8E%E5%B8%82%E7%83%AD%E7%82%B9.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472279739&amp;tab_details=history&amp;mediado=diff&amp;do=media"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico">
+        <title>广东工业大学网管队</title>
+        <link>https://www.gdutnic.com/</link>
+        <url>https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico</url>
+    </image>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/691?rev=1472537075&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T14:04:35+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:691 - 创建</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/691?rev=1472537075&amp;do=diff</link>
+        <description>(691) 验证帐号密码失败，已拒绝远程连接，因为未识别出你所提供的用户名和密码组合，或在远程访问服务器上禁止使用选定的身份验证协议
+
+截图
+
+
+
+成因
+
+	*  密码错误
+	*  余额不足
+	*  帐号报停</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A691.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472537059&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T14:04:19+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:691.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A691.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472537059&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/691.png?w=500&amp;h=69&amp;t=1472537059&amp;amp;tok=131b85&quot; alt=&quot;用户手册:客户端提示及其解决办法:691.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/629?rev=1472537028&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T14:03:48+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:629 - 创建</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/629?rev=1472537028&amp;do=diff</link>
+        <description>(629) 连接被远程计算机终止
+
+截图
+
+
+
+成因
+
+	*  密码错误
+	*  余额不足
+	*  端口绑定失败
+
+解决方案
+
+由于新旧系统之间的同步问题，您的旧密码可能无法正常同步过来新系统这边，建议在登录之前先确认密码正确无误。</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E5%81%9C%E6%9C%BA.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536951&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T14:02:31+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:停机.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E5%81%9C%E6%9C%BA.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536951&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/%E5%81%9C%E6%9C%BA.png?w=204&amp;h=245&amp;t=1472536951&amp;amp;tok=8adcd8&quot; alt=&quot;用户手册:客户端提示及其解决办法:停机.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80?rev=1472536527&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T13:55:27+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:拨号连接异常断开 - 创建</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80?rev=1472536527&amp;do=diff</link>
+        <description>截图
+
+
+
+成因
+
+	*  网线没有插好，右下角小图标显示 X ，对应法 1
+
+
+
+	*  交换机配置错误，右下角小图标显示 ！ ，无法自动获取到 IP 地址，没有自动打开下载客户端的网页，无法访问&lt;http://222.200.98.8:1800/Dr.COM/&gt; ，对应法 2</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A1.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536159&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T13:49:19+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:1.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A1.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472536159&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/1.png?w=22&amp;h=24&amp;t=1472536159&amp;amp;tok=f43663&quot; alt=&quot;用户手册:客户端提示及其解决办法:1.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3Ax.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472535936&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T13:45:36+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:x.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3Ax.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472535936&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/x.png?w=23&amp;h=29&amp;t=1472535936&amp;amp;tok=6029c0&quot; alt=&quot;用户手册:客户端提示及其解决办法:x.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472534894&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-30T13:28:14+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:拨号连接异常断开.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472534894&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/%E6%8B%A8%E5%8F%B7%E8%BF%9E%E6%8E%A5%E5%BC%82%E5%B8%B8%E6%96%AD%E5%BC%80.png?w=500&amp;h=187&amp;t=1472534894&amp;amp;tok=9eee49&quot; alt=&quot;用户手册:客户端提示及其解决办法:拨号连接异常断开.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/sidebar?rev=1472403294&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-29T00:54:54+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>sidebar - [Dr.COM认证计费系统] 创造</title>
+        <link>https://www.gdutnic.com/sidebar?rev=1472403294&amp;do=diff</link>
+        <description>*  首页
+	*  用户手册
+			*  报装流程
+			*  续费流程
+			*  计费策略 余额查询
+			*  更换 补偿 退费 转账流程
+			*  客户端下载安装
+			*  客户端提示及其解决办法
+			*  DNS 更换
+			*  网络自我诊断
+
+	*  网管员手册
+			*  端口编号与楼栋表
+			*  Dr.COM 认证计费系统
+					*  用户管理
+					*  日志查询
+					*  批量操作
+
+			*  IT 服务综合管理平台
+					*  新建事件
+					*  批量导入
+					*  事件处理
+					*  事件查询
+					*  值班请假
+					*  值班补班
+					*  值班调班
+
+			*  监控平台
+					*  日常使用
+					*  常用工具…</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95?rev=1472304428&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T21:27:08+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法 - [720] 新增</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95?rev=1472304428&amp;do=diff</link>
+        <description>认证提示
+
+	*  拨号连接异常断开，请稍后重新拨号
+	*  (623) 系统无法为这个连接找到电话薄项目
+	*  (629) 连接被远程计算机终止
+	*  (691) 验证帐号密码失败，已拒绝远程连接，因为未识别出你所提供的用户名和密码组合，或在远程访问服务器上禁止使用选定的身份验证协议
+	*  (720) 不能建立到远程计算机的连接。你可能需要更改此连接的网络设置。
+	*  (756) 已经拨了这个连接
+
+代理提示
+
+	*  代理检测线程异常
+	*  Windows系统自带共享代理
+	*  MiWifi…</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A629.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472293602&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T18:26:42+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:629.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A629.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472293602&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/629.png?w=451&amp;h=191&amp;t=1472293602&amp;amp;tok=8f783d&quot; alt=&quot;用户手册:客户端提示及其解决办法:629.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/623?rev=1472293514&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T18:25:14+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:623 - 创建</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/623?rev=1472293514&amp;do=diff</link>
+        <description>(623) 系统无法为这个连接找到电话薄项目
+
+截图
+
+
+
+成因
+
+Dr.COM 在启动时，会在系统中创建一个名为 Dr.COM 的 PPPoE 连接，由于某种关系删除了这个 PPPoE 连接后，再继续尝试登录 Dr.COM 客户端就会提示这个错误信息</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A623.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472292811&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T18:13:31+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端提示及其解决办法:623.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%3A623.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95&amp;rev=1472292811&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8F%90%E7%A4%BA%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/623.png?w=499&amp;h=169&amp;t=1472292811&amp;amp;tok=d51ec3&quot; alt=&quot;用户手册:客户端提示及其解决办法:623.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85?rev=1472288476&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T17:01:16+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:客户端下载安装 - [备用下载] 新增更新时间</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85?rev=1472288476&amp;do=diff</link>
+        <description>下载
+
+在插上校园网的网线之后，正确情况下，系统会自动打开系统中默认的浏览器，并且自动转到这个地址
+
+&lt;http://222.200.98.8:1800/Dr.COM/&gt;
+
+
+
+然后你就可以按照网页上面的提示，选择你所正在使用的系统，下载对应的客户端。</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-linux.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288170&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T16:56:10+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:dr.com-linux.zip - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-linux.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288170&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description></description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-windows.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288155&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T16:55:55+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:dr.com-windows.zip - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-windows.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472288155&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description></description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-apple.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472286566&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T16:29:26+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:dr.com-apple.zip - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Adr.com-apple.zip&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472286566&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description></description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Alinux_%E5%AE%A2%E6%88%B7%E7%AB%AF.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280963&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T14:56:03+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:linux_客户端.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3Alinux_%E5%AE%A2%E6%88%B7%E7%AB%AF.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280963&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/linux_%E5%AE%A2%E6%88%B7%E7%AB%AF.png?w=340&amp;h=350&amp;t=1472280963&amp;amp;tok=18f6ba&quot; alt=&quot;用户手册:linux_客户端.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280259&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T14:44:19+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:新建快捷方式.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472280259&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.png?w=340&amp;h=217&amp;t=1472280259&amp;amp;tok=d4a6f1&quot; alt=&quot;用户手册:新建快捷方式.png&quot; /&gt;</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%9F%8E%E5%B8%82%E7%83%AD%E7%82%B9.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472279739&amp;tab_details=history&amp;mediado=diff&amp;do=media">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-27T14:35:39+08:00</dc:date>
+        <dc:creator>imlonghao</dc:creator>
+        <title>用户手册:城市热点.png - 创建</title>
+        <link>https://www.gdutnic.com/?image=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%3A%E5%9F%8E%E5%B8%82%E7%83%AD%E7%82%B9.png&amp;ns=%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C&amp;rev=1472279739&amp;tab_details=history&amp;mediado=diff&amp;do=media</link>
+        <description>&lt;img src=&quot;https://www.gdutnic.com/_media/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E5%9F%8E%E5%B8%82%E7%83%AD%E7%82%B9.png?w=499&amp;h=427&amp;t=1472279739&amp;amp;tok=fcbb58&quot; alt=&quot;用户手册:城市热点.png&quot; /&gt;</description>
+    </item>
+</rdf:RDF>

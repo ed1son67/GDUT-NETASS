@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="https://www.gdutnic.com/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="https://www.gdutnic.com/feed.php">
+        <title>广东工业大学网管队 用户手册</title>
+        <description></description>
+        <link>https://www.gdutnic.com/</link>
+        <image rdf:resource="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico" />
+       <dc:date>2016-08-10T09:16:06+08:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%8A%A5%E8%A3%85%E6%B5%81%E7%A8%8B?rev=1470320579&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%9B%B4%E6%8D%A2_%E8%A1%A5%E5%81%BF_%E9%80%80%E8%B4%B9_%E8%BD%AC%E8%B4%A6%E6%B5%81%E7%A8%8B?rev=1470319989&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E7%BB%AD%E8%B4%B9%E6%B5%81%E7%A8%8B?rev=1470318285&amp;do=diff"/>
+                <rdf:li rdf:resource="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E8%AE%A1%E8%B4%B9%E7%AD%96%E7%95%A5_%E4%BD%99%E9%A2%9D%E6%9F%A5%E8%AF%A2?rev=1470319492&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico">
+        <title>广东工业大学网管队</title>
+        <link>https://www.gdutnic.com/</link>
+        <url>https://www.gdutnic.com/lib/tpl/dokuwiki/images/favicon.ico</url>
+    </image>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%8A%A5%E8%A3%85%E6%B5%81%E7%A8%8B?rev=1470320579&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T22:22:59+08:00</dc:date>
+        <title>用户手册:报装流程</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%8A%A5%E8%A3%85%E6%B5%81%E7%A8%8B?rev=1470320579&amp;do=diff</link>
+        <description>报装时间
+ 周一  9:00-11:30 / 13:40-16:30  周三  9:00-11:30 / 13:40-15:40  周五  9:00-11:30 / 13:40-15:40 
+暑假报装日期：2016年7月12日（星期二）、7月28日（星期四）、8月27日（星期六）、8月28日（星期日）</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%9B%B4%E6%8D%A2_%E8%A1%A5%E5%81%BF_%E9%80%80%E8%B4%B9_%E8%BD%AC%E8%B4%A6%E6%B5%81%E7%A8%8B?rev=1470319989&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T22:13:09+08:00</dc:date>
+        <title>用户手册:更换_补偿_退费_转账流程</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%9B%B4%E6%8D%A2_%E8%A1%A5%E5%81%BF_%E9%80%80%E8%B4%B9_%E8%BD%AC%E8%B4%A6%E6%B5%81%E7%A8%8B?rev=1470319989&amp;do=diff</link>
+        <description>更换端口
+
+	*  用户因宿舍调整等原因需要更换端口的，请填写好《校园网用户更换端口申请表》，并加盖所在单位/学院公章，交到网络中心办公室实验三号楼 712 。
+	*  经核实后，转网络中心值班室实验三号楼 709A 处理相关端口转换工作。</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E7%BB%AD%E8%B4%B9%E6%B5%81%E7%A8%8B?rev=1470318285&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T21:44:45+08:00</dc:date>
+        <title>用户手册:续费流程</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E7%BB%AD%E8%B4%B9%E6%B5%81%E7%A8%8B?rev=1470318285&amp;do=diff</link>
+        <description>续费时间
+ 周一  9:00-11:30 / 13:40-16:30  周三  9:00-11:30 / 13:40-15:40  周五  9:00-11:30 / 13:40-15:40 
+暑假续费日期：2016年7月12日（星期二）、7月28日（星期四）、8月27日（星期六）、8月28日（星期日）</description>
+    </item>
+    <item rdf:about="https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E8%AE%A1%E8%B4%B9%E7%AD%96%E7%95%A5_%E4%BD%99%E9%A2%9D%E6%9F%A5%E8%AF%A2?rev=1470319492&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2016-08-04T22:04:52+08:00</dc:date>
+        <title>用户手册:计费策略_余额查询</title>
+        <link>https://www.gdutnic.com/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E8%AE%A1%E8%B4%B9%E7%AD%96%E7%95%A5_%E4%BD%99%E9%A2%9D%E6%9F%A5%E8%AF%A2?rev=1470319492&amp;do=diff</link>
+        <description>计费周期
+
+校园网以一个非自然月作为一个周期
+
+非自然月：从一个月份中的任一天开始，到下个月份的相同日期的那一天为止。
+
+例如：小明 2016 年 7 月 4 日开始使用校园网，那么这个周期就是到 8 月 4 日。</description>
+    </item>
+</rdf:RDF>

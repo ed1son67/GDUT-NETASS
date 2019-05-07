@@ -1,0 +1,5 @@
+$ <span class="kw3">cd</span> ~
+$ <span class="kw2">wget</span> http:<span class="sy0">//</span>222.200.98.8:<span class="nu0">1800</span><span class="sy0">/</span>Dr.COM<span class="sy0">/</span>Client<span class="sy0">/</span>Dr.Com-LINUX.zip
+$ <span class="kw2">unzip</span> Dr.Com-LINUX.zip
+$ <span class="kw3">cd</span> DrClient<span class="sy0">/</span>
+$ .<span class="sy0">/</span>privillege.sh <span class="co0"># Root Password Required</span>

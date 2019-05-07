@@ -1,0 +1,80 @@
+===== 下载 =====
+
+在插上校园网的网线之后，正确情况下，系统会自动打开系统中默认的浏览器，并且自动转到这个地址
+
+''http://222.200.98.8:1800/Dr.COM/''
+
+{{ :用户手册:城市热点.png?300 |}}
+
+然后你就可以按照网页上面的提示，选择你所正在使用的系统，下载对应的客户端。
+
+==== 备用下载 ====
+
+更新时间： 2016.09.02
+
+{{ :用户手册:dr.com-windows.zip | Windows}}
+
+<code>
+MD5: 92796194f9d7cb282bdbb239543e9519
+SHA256: aff69da5b76eca00f2c509a8025e0505f9f4801bc647b5761ac2db6d7fb46e37
+</code>
+
+{{ :用户手册:dr.com-linux.zip | Linux}}
+
+<code>
+MD5: b2fb280e9c31c11ca33cae8b25c36b74
+SHA256: a1c101a5148f0f4c4fa6613e61c0cfa7a61e44949714017ebecfaf4ac17dbec1
+</code>
+
+{{ :用户手册:dr.com-apple.zip | MacOS}}
+
+<code>
+MD5: baa7477bd389098a6c41125493a686a6
+SHA256: 83df4ad7bb190f0089e167b8f65a9bff33dc8d5c59df78528c2c020d4a81e0c0
+</code>
+
+===== 安装 =====
+
+==== Windows ====
+
+Windows 客户端下载地址：http://222.200.98.8:1800/Dr.COM/Client/Dr.Com.exe
+
+下载之后，双击就会开始自动安装，默认会安装在 ''C:/Drcom'' 目录下，今后如果需要卸载则可以直接删除这个目录。注意：若无C盘盘符则会安装失败。
+
+接着会询问是否需要在桌面创造快捷方式，选择是即可。
+
+{{ :用户手册:新建快捷方式.png?300 |}}
+
+然后默认就会自动打开客户端，按照提示操作即可。
+
+==== Linux ====
+
+  * **支持CentOS，Redhat等支持rpm的发行版**
+  * **Ubuntu 系列暂不支持**
+
+Linux 版本客户端的第一次使用需要有 ''root'' 权限
+
+以下是在终端中进行客户端的初始化，也可以按照你的实际需要进行变化。
+
+默认在当前用户目录下进行操作
+
+<code bash>
+$ cd ~
+$ wget http://222.200.98.8:1800/Dr.COM/Client/Dr.Com-LINUX.zip
+$ unzip Dr.Com-LINUX.zip
+$ cd DrClient/
+$ ./privillege.sh # Root Password Required
+</code>
+
+初始化完毕后，打开客户端即可以通过运行 ''DrClient'' 目录下的 ''DrClientLinux'' 即可
+
+<code bash>
+$ cd ~/DrClient/
+$ ./DrClientLinux
+</code>
+
+{{ :用户手册:linux_客户端.png?300 |}}
+
+==== MacOS ====
+
+支持10.12之前的系统版本
