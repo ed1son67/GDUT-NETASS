@@ -1,8 +1,33 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+@import '/towxml/style/main.wxss';
+
+.main-container {
+  background-color: #f6f6f6;
+  height: 100vh;
 }
-.log-item {
-  margin: 10rpx;
+
+.cart-item {
+  background-color: #fff;
+  margin: 0 30rpx 30rpx 30rpx; 
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-shadow: #c7c7c7 0px 0px 10rpx;
+  
+}
+
+.title {
+  font-size: 40rpx;
+  line-height: 1.5em;
+
+}
+
+.content {
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  line-height: 1.5em;
+}
+
+.footer {
+  text-align: right;
+  font-size: 26rpx;
+  color: #949494;
 }

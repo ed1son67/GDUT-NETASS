@@ -75,7 +75,7 @@ Page({
     }
     
     wx.request({
-      url: 'http://ed1son.cn:8001/port',
+      url: 'https://www.ed1son.cn/port',
       method: 'POST',
       data: queryData,
       success(res) {
