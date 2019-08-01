@@ -25,6 +25,10 @@
   padding: 10rpx 0;
   line-height: 1.5em;
 }
+.content::after {
+  content: "...";
+  display: inline-block;
+}
 
 .footer {
   text-align: right;

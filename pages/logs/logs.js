@@ -1,30 +1,48 @@
 //logs.js
 const app = getApp();
+import { baseUrl } from '../../utils/util.js';
 
 Page({
   data: {
-    logs: [],
-    article: {}
+    logs: [],  
+    article: {},
+    articleData: [{
+      title: '',
+      content: '',
+      footer: ''
+    }]
   },
-  onPullDownRefres: function() {
-    console.log(123);
+  onPullDownRefresh: function () {
+    this.queryAllBlog();
+  },
+  /**
+   * 跳转到文章详细页面
+   */
+  jumpToArticle: function () {
+    wx.navigateTo({
+      url: '../article/article?name=QG.md'
+    })
+  },
+  /**
+   * 查询所有的文章
+   */
+  queryAllBlog: function () {
+    let _this = this;
+    wx.request({
+      url: baseUrl + '/queryAllBlog',
+      method: 'get',
+      success: res => {
+        console.log(res.data);
+        // 停止刷新
+        wx.stopPullDownRefresh();
+        
+        this.setData({
+          articleData: res.data
+        })
+      }
+    })
   },
   onLoad: function () {
-    let _this = this;
-    // wx.request({
-    //   url: 'https://www.ed1son.cn/doc/QG.md',
-    //   success: (res) => {
-    //     let articleData = app.towxml.toJson(res.data, 'markdown');
-    //     console.log(articleData);
-    //     articleData = app.towxml.initData(articleData, {
-    //       base: 'http://ed1son.cn:8001',
-    //       app: _this
-    //     });
-
-    //     _this.setData({
-    //       article: articleData
-    //     })
-    //   }
-    // })
+    this.queryAllBlog();
   }
 })

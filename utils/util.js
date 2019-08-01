@@ -13,7 +13,15 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+const baseUrl = 'https://www.ed1son.cn';
+
+const isEmptyObject = function(obj) {
+  return Object.keys(obj).length === 0 ? true : false;
+}
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  baseUrl: baseUrl,
+  isEmptyObject: isEmptyObject
 }
+

@@ -28,7 +28,7 @@
           房间号：
         </view>
         <view class='item'>
-          <input bindinput='roomChange' placeholder='请输入房间号' placeholder-style='color: #000;'></input>
+          <input bindinput='roomChange' maxlength='3' placeholder='请输入房间号' placeholder-style='color: #000;'></input>
         </view>
       </view>
        <view class='form-item'>
