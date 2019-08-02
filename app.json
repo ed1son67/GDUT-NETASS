@@ -31,7 +31,7 @@
         "pagePath": "pages/logs/logs",
         "iconPath": "./static/images/question_unselect.png",
         "selectedIconPath": "./static/images/question_select.png",
-        "text": "常见故障"
+        "text": "WIKI"
       }
     ]
   },

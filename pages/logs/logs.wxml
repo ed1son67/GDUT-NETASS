@@ -1,17 +1,33 @@
 <view class='main-container'>
-  <view style='height: 100rpx; width: 100%;text-align: center;'>
-    这是额头
-  </view> 
-
-  <view class='cart-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{articleData}}" >
-    <view class='title'>
-      {{item.title}}
+  <!-- tab begin-->
+  <view class="tab-wrapper" bindtap="setActive">
+    <view class="tab-item {{isActive == 0 ? 'tab-item-active' : ''}}" data-index="0">常用教程</view>
+    <view class="tab-item {{isActive == 1 ? 'tab-item-active' : ''}}" data-index="1">常见故障</view>
+    <view class="tab-item-line" animation="{{animationData}}"></view>
+  </view>
+  <!-- tab end -->
+  
+  <view>
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{articleData}}">
+      <view class='card-title'>
+        {{item.title}}
+      </view>
+      <view class='card-content'>
+        {{item.content}}
+      </view>
+      <view class='card-footer'>
+        <view class="footer-text">
+          123123阅读
+        </view>
+        <view>
+          {{item.timeStamp}}
+        </view>
+      </view>
     </view>
-    <view class='content'>
-      {{item.content}}      
-    </view>
-    <view class='footer'>
-      {{item.timeStamp}}  
+    <view class="load-more">
+      查看更多
     </view>
   </view>
+  
+
 </view>
