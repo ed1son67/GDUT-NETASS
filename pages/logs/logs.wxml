@@ -1,14 +1,15 @@
 <view class='main-container'>
   <!-- tab begin-->
-  <view class="tab-wrapper" bindtap="setActive">
-    <view class="tab-item {{isActive == 0 ? 'tab-item-active' : ''}}" data-index="0">常用教程</view>
-    <view class="tab-item {{isActive == 1 ? 'tab-item-active' : ''}}" data-index="1">常见故障</view>
+  <view class="tab-wrapper" bindtap="turnPage">
+    <view class="tab-item {{isActive == 0 ? 'tab-item-active' : ''}}" data-index="0">业务流程</view>
+    <view class="tab-item {{isActive == 1 ? 'tab-item-active' : ''}}" data-index="1">常用教程</view>
+    <view class="tab-item {{isActive == 2 ? 'tab-item-active' : ''}}" data-index="2">常见故障</view>
     <view class="tab-item-line" animation="{{animationData}}"></view>
   </view>
   <!-- tab end -->
   
-  <view>
-    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{articleData}}">
+  <view class="tab-content {{isActive == 0 ? 'show' : 'hide'}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{tutorialData}}">
       <view class='card-title'>
         {{item.title}}
       </view>
@@ -24,10 +25,57 @@
         </view>
       </view>
     </view>
-    <view class="load-more">
-      查看更多
-    </view>
+    
   </view>
-  
-
+  <view class="tab-content {{isActive == 1 ? 'show' : 'hide'}}">
+    
+  </view>
+  <view class="tab-content {{isActive == 2 ? 'show' : 'hide'}}">
+    3
+  </view>
+  <view class="load-more" bindtap="loadMoreBlogs">
+    {{loadingText}}
+  </view>
+  <view class="skeleton-wrapper {{showSkeleton ? 'show' : 'hide'}}">
+      <view class="skeleton-item">
+        <view class="skeleton-title">
+        </view>
+        <view class="skeleton-paragraph" style="width: 100%;">
+        </view>
+        <view class="skeleton-paragraph">
+        </view>
+        <view class="skeleton-footer"  >
+          <view style="width: 20%;"></view>
+          
+          <view style="width: 40%;"></view>
+        </view>
+      </view>
+      <view class="skeleton-item">
+        <view class="skeleton-title">
+        </view>
+        <view class="skeleton-paragraph" style="width: 100%;">
+        </view>
+        <view class="skeleton-paragraph">
+        </view>
+        <view class="skeleton-footer"  >
+          <view style="width: 20%;"></view>
+          
+          <view style="width: 40%;"></view>
+        </view>
+      </view>
+      <view class="skeleton-item">
+        <view class="skeleton-title">
+        </view>
+        <view class="skeleton-paragraph" style="width: 100%;">
+        </view>
+        <view class="skeleton-paragraph">
+        </view>
+        <view class="skeleton-footer"  >
+          <view style="width: 20%;"></view>
+          
+          <view style="width: 40%;"></view>
+        </view>
+      </view>
+      
+    </view>
 </view>

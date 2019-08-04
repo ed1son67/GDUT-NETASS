@@ -13,7 +13,9 @@
   },
   "tabBar": {
     "backgroundColor": "#fff",
-    "selectedColor": "#2a83ff",
+    "selectedColor": "#1f8ae9",
+    "color": "#999",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -35,5 +37,6 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
 }

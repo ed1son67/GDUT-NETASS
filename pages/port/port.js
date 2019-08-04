@@ -74,7 +74,7 @@ Page({
    * 转换数据的正确格式
    */
   getInputData() {
-    let data = Object.create(null);
+    let data = {};
 
     let queryData = {
       bed: this.data.bed,
@@ -85,7 +85,7 @@ Page({
     data['building'] = this.data.building.slice(6);
     data['bed'] = ['一号床', '二号床', '三号床', '四号床'].indexOf(this.data.bed);
     
-    // console.log(data);
+    console.log(data);
     return data;
   },
   /**
@@ -106,15 +106,13 @@ Page({
     wx.showLoading({
       title: '查询中'
     })
-
-    wx.request({
-      url: 'https://www.ed1son.cn/port',
-      method: 'POST',
+    
+    wx.cloud.callFunction({
+      name: 'queryPort',
       data: queryData,
       success(res) {
-        let data = res.data;
         wx.hideLoading();
-        if (isEmptyObject(data)) {
+        if (res.result === "") {
           wx.showModal({
             title: '查询失败',
             content: '系统暂时未记录该端口号',
@@ -122,18 +120,46 @@ Page({
         } else {
           wx.showModal({
             title: '您的端口号是：',
-            content: data.port,
+            content: res.result,
           })  
         }  
       },
       fail(err) {
+        console.log(err);
         wx.hideLoading();
         wx.showModal({
           title: '查询失败',
           content: '服务器开小差了',
         })  
       }
-    });
+    })
+     // wx.request({
+    //   url: 'https://www.ed1son.cn/port',
+    //   method: 'POST',
+    //   data: queryData,
+    //   success(res) {
+    //     let data = res.data;
+    //     wx.hideLoading();
+    //     if (isEmptyObject(data)) {
+    //       wx.showModal({
+    //         title: '查询失败',
+    //         content: '系统暂时未记录该端口号',
+    //       })  
+    //     } else {
+    //       wx.showModal({
+    //         title: '您的端口号是：',
+    //         content: data.port,
+    //       })  
+    //     }  
+    //   },
+    //   fail(err) {
+    //     wx.hideLoading();
+    //     wx.showModal({
+    //       title: '查询失败',
+    //       content: '服务器开小差了',
+    //     })  
+    //   }
+    // });
   },
   /**
    * 生命周期函数--监听页面加载
