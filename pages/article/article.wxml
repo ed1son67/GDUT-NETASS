@@ -1,9 +1,29 @@
-<import src="/towxml/entry.wxml"/>
+<import src="/towxml/entry.wxml" />
 <view>
-  <view class="header">
+  <view class="loading-page" wx:if="{{loading}}">
+    <image  src="../../static/images/loading.png"></image>
   </view>
-    <template is="entry" data="{{...article}}"/>
-  <view class="footer">
-    
+  <view wx:else>
+    <view class="header">
+      <view class="title">
+        {{title}}
+      </view>
+      <view class="time">
+        最后编辑于：{{time}}
+      </view>
+    </view>
+    <template is="entry" data="{{...article}}" />
+    <view class="footer">
+      <!-- <view class="footer-content">
+      <view>最后编辑：</view>
+      <view>{{time}}</view>
+    </view> -->
+      <view class="footer-content">
+        <view>作者：</view>
+        <view>学生网管队</view>
+      </view>
+    </view>
   </view>
+
+
 </view>

@@ -1,11 +1,61 @@
 /* pages/article/article.wxss */
 @import '/towxml/style/main.wxss';
-
-.log-list {
+page {
   display: flex;
   flex-direction: column;
-  padding: 40rpx;
+  background-color: #FFF;
 }
-.log-item {
-  margin: 10rpx;
+.header {
+  padding: 20rpx 40rpx 10rpx 40rpx;
+ 
+ 
+  line-height: 1.5;
+  font-weight: 600;
+
+}
+.title {
+  font-size: 50rpx;
+  
+}
+.time {
+  font-size: 28rpx;
+  margin: 15rpx 0;
+  color: #999;
+}
+.footer {
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+  margin: 0 25rpx;
+  margin-bottom: 40rpx;
+}
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.loading-page {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  height: 100vh;
+  position: relative;
+}
+.loading-page  image {
+  height: 80rpx;
+  width: 80rpx;
+  animation: loading 1.2s ease infinite;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -40rpx;
 }

@@ -1,53 +1,73 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='header-container'>
+  <view class='background-container'>
     <view class='title-container'>
       <view>网络端口查询</view>
     </view>
   </view>
-  <view class='main-container'>
+  <view class='card-container '>
     <view class='form-contaienr'>
       <view class='form-item'>
         <view class='label'>
-          楼栋：
+          <image class="label-icon" src="../../static/images/building.png"></image>
+          楼栋
         </view>
-        <view class='item'>
+        <view class="item {{building == '请选择楼栋' ? '': 'active'}}">
           <picker 
-            value='{{buildingIndex}}'
-            range='{{buildingData}}'
-            mode="multiSelector"
-            bindchange="buildingChange"
+            value='{{buildingIndex}}' 
+            range='{{buildingData}}' 
+            mode="multiSelector" bindchange="buildingChange" 
             bindcolumnchange="buildingColumnChange"
           >
-           {{building}}
+            {{building}}
+            <image class="rightArrow" src="../../static/images/right.png"></image>
           </picker>
         </view>
       </view>
-       <view class='form-item'>
+      <view class='form-item'>
         <view class='label'>
-          房间号：
+          <image class="label-icon" src="../../static/images/room.png"></image>
+
+          房间号
         </view>
-        <view class='item'>
-          <input bindinput='roomChange' maxlength='3' placeholder='请输入房间号' placeholder-style='color: #000;'></input>
+        <view class='item' >
+          <input 
+            bindinput='roomChange' 
+            maxlength='3' 
+            placeholder='请输入房间号' 
+            placeholder-style='color: #999;'
+            style="color: #000;"
+          ></input>
+          <image class="rightArrow" src="../../static/images/right.png"></image>
         </view>
       </view>
-       <view class='form-item'>
+      <view class='form-item'>
         <view class='label'>
-          床号：
+          <image class="label-icon" src="../../static/images/bed.png"></image>
+
+          床号
         </view>
-        <view class='item'>
+        <view class="item {{bed == '请选择床号' ? '': 'active'}}" >
           <picker 
-            value='{{bedIndex}}'
-            range='{{bedData}}'
-            bindchange="bedChange"
+            value='{{bedIndex}}' 
+            range='{{bedData}}' 
+            bindchange="bedChange" 
+            
           >
             {{bed}}
+            <image class="rightArrow" src="../../static/images/right.png"></image>
           </picker>
         </view>
       </view>
     </view>
     <view class='button-container'>
-      <button bindtap='seachPort'>查询端口</button>
+      <button bindtap='seachPort'>
+        查询端口
+      </button>
     </view>
+
+  </view>
+  <view class="tips-container" bindtap="openWiki">
+    找不到端口号？
   </view>
 </view>

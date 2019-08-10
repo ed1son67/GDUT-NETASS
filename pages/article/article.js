@@ -9,14 +9,25 @@ Page({
    */
   data: {
     article: {},
-
+    title: '',
+    time: '',
+    loading: true
   },
   
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    let blogName = options.name;
+    let blogName = options.name,
+        title = options.title,
+        time = options.time,
+        blogType = options.type
+
+    console.log(options)
+    const blogTypes = ['业务流程', '常用教程', '常见故障'];
+    wx.setNavigationBarTitle({
+      title: blogTypes[blogType]
+    })
     wx.request({
       // url: 'http://localhost:8001/blog/' + blogName,
       url: 'https://www.ed1son.cn/doc/' + blogName,
@@ -29,9 +40,12 @@ Page({
           base: 'http://ed1son.cn:8001',
           app: this
         });
-
+        // articleData.them = 'light';
         this.setData({
-          article: articleData
+          article: articleData,
+          title: title,
+          time: time,
+          loading: false
         })
       }
     })

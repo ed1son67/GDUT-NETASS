@@ -1,26 +1,20 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="background"></view>
+
   <view class='header-container'>
     <view class='title-container'>
-      <view>欢迎使用</view>
-      <view>工大网络助手</view>
-      <view class='small-title'>端口查询 · 常见故障 · 自助报障</view>
+      <view class="title">欢迎使用</view>
+      <view class="title">工大网络助手</view>
+      <view class='small-title'>端口查询 · 最新资讯 · 知识分享</view>
     </view>
     <image src='../../static/images/icon.png'></image>
   </view>
- 
-  <view class='main-container'>
-    <view class='item'>
-      端口查询
-    </view>
-    <view class='item'>
-      常见故障处理
-    </view>
-    <view class='item'>
-      游客报修
-    </view>
 
-  </view>
+  <!-- <button bindtap="openMask">openMask</button> -->
 </view>
-
-<!-- <web-view src="http://wechat.dotease.cn:8008/Home/AddFaultWork"></web-view> -->
+<i-mask
+  show="{{showMask}}"
+  bind:close="closeMask"
+ ></i-mask>
+ <!-- <i-modal></i-modal> -->

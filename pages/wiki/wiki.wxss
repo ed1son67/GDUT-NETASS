@@ -1,17 +1,5 @@
-@import '/towxml/style/main.wxss';
-
-page {
-  background-color: #f6f6f6;
-  position: relative;
-}
-.main-container {
-  height: auto;
-  /* overflow: hidden;  */
-
-}
-
-/* tabBar */
-.tab-wrapper{
+/* navBar */
+.nav-wrapper{
   max-width: 100%;
   background: #fff;
   position: fixed;
@@ -21,7 +9,7 @@ page {
   /* height: 100rpx; */
   
 }
-.tab-item{
+.nav-item{
   display: inline-block;
   width: 33.3%;
   font-size: 28rpx;
@@ -31,34 +19,28 @@ page {
   
   padding: 20rpx 0;
 }
-.tab-item-active{
+.nav-item-active{
   color: #323233;
 }
-.tab-item-line{
+.nav-item-line{
   width: 33.3%;
   position: absolute;
   left: 0;
   bottom: 1rpx;
   border-bottom: 4rpx solid #323233;
 }
+
 .tab-content {
   display: none;
   margin-top: 100rpx;
 }
 
 
-.card-container {
-  /* height:500rpx; */
-  height: 1000rpx;
-}
 
 .card-item {
   background-color: #fff;
-  margin: 22rpx 15rpx; 
-  /* border-radius: 6rpx; */
+  margin: 20rpx 8rpx;   
   padding: 20rpx;
-  /* box-shadow: #c7c7c7 0px 0px 5rpx; */
-  
 }
 
 .card-title {
@@ -85,10 +67,6 @@ page {
   -webkit-line-clamp:2;
   
 }
-/* .card-content::after {
-  content: "...";
-  display: inline-block;
-} */
 
 .card-footer {
   display: flex;
@@ -98,9 +76,12 @@ page {
   margin: 10rpx 0 0 0;
 }
 
+.timeStamp-container {
+  /* background-color: #f1f5f9;
+  border-radius: 10rpx; */
+}
 .load-more {
  
-  
   text-align: center;
   color: #cdcdcd;
   font-size: 28rpx;

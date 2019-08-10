@@ -65,7 +65,7 @@ Page({
    * 验证输入的数据是否正确
    */
   verifyInput() {
-    if (this.data.room === '' || this.data.bed === '请选择床号' || this.data.building === '请选择楼栋') 
+    if ((this.data.room === '' || this.data.room.length < 3) || this.data.bed === '请选择床号' || this.data.building === '请选择楼栋') 
       return false;
     else 
       return true;
@@ -104,7 +104,8 @@ Page({
     let queryData = this.getInputData();
 
     wx.showLoading({
-      title: '查询中'
+      title: '查询中',
+      mask: true
     })
     
     wx.cloud.callFunction({
@@ -121,6 +122,7 @@ Page({
           wx.showModal({
             title: '您的端口号是：',
             content: res.result,
+            showCancel: false
           })  
         }  
       },
@@ -133,34 +135,12 @@ Page({
         })  
       }
     })
-     // wx.request({
-    //   url: 'https://www.ed1son.cn/port',
-    //   method: 'POST',
-    //   data: queryData,
-    //   success(res) {
-    //     let data = res.data;
-    //     wx.hideLoading();
-    //     if (isEmptyObject(data)) {
-    //       wx.showModal({
-    //         title: '查询失败',
-    //         content: '系统暂时未记录该端口号',
-    //       })  
-    //     } else {
-    //       wx.showModal({
-    //         title: '您的端口号是：',
-    //         content: data.port,
-    //       })  
-    //     }  
-    //   },
-    //   fail(err) {
-    //     wx.hideLoading();
-    //     wx.showModal({
-    //       title: '查询失败',
-    //       content: '服务器开小差了',
-    //     })  
-    //   }
-    // });
   },
+  openWiki: function() {
+    wx.navigateTo({
+      url: '../article/article',
+    })
+  },  
   /**
    * 生命周期函数--监听页面加载
    */

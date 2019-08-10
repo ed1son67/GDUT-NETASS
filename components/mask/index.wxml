@@ -1,0 +1,9 @@
+<view class="mask-wrapper {{show == true? 'showMask' : ''}}">
+  <view class="mask-main">
+    <view class="mask-close" bindtap="closeMask">
+      <image src="../../static/images/close.png"></image>
+    </view>
+    <view class="mask-content">
+    </view>
+  </view>
+</view>

@@ -1,8 +1,12 @@
 {
   "pages": [
-    "pages/logs/logs",
-    "pages/port/port",
     "pages/index/index",
+    "pages/wiki/wiki",
+    
+    
+    
+    "pages/port/port",
+    
     "pages/article/article"
   ],
   "window": {
@@ -30,13 +34,14 @@
         "text": "端口查询"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "./static/images/question_unselect.png",
-        "selectedIconPath": "./static/images/question_select.png",
+        "pagePath": "pages/wiki/wiki",
+        "iconPath": "./static/images/wiki_unselect.png",
+        "selectedIconPath": "./static/images/wiki_select.png",
         "text": "WIKI"
       }
     ]
   },
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json",
   "cloud": true
 }

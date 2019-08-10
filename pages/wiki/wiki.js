@@ -4,24 +4,22 @@ import { baseUrl } from '../../utils/util.js';
 
 Page({
   data: {
-    logs: [],  
+    logs: [],
     article: {},
     tutorialData: [],
     processData: [],
     methodsData: [],
     pages: [1, 0, 0],
-    tutorialPage: 1,
-    processPage: 1,
-    methodsPage: 1,
     isActive: 0,
     animationData: {},
     loadingText: "查看更多",
     blogType: 0,
+    loadingStatus: [false, false, false],
     showSkeleton: true
   },
-  turnPage: function(e) {
-    // 设置当前tabbar
-    var index = e.target.dataset.index;
+  turnPage: function (e) {
+    // 设置当前tabBar
+    var index = parseInt(e.target.dataset.index);
     // 防止重复点击同一个类别
     if (index === this.data.blogType) return;
     // 初始化动画数据
@@ -41,28 +39,42 @@ Page({
       isActive: index,
       blogType: index,
     })
-    this.data.showSkeleton = false;
+
     // 判断是否为首次加载
     if (this.data.pages[index] === 0) {
       this.setData({
         showSkeleton: true,
       })
       this.data.pages[index]++;
+      this.queryBlogsByPage();
+      // this.data.loadingStatus[0] = true
+      // console.log(this.data.loadingStatus[0]);
     }
   },
   onPullDownRefresh: function () {
     wx.showNavigationBarLoading();
+    // 重置所有的页码
+
     this.queryBlogsByPage(1);
     this.setData({
-      loadingText: "查看更多"
-    }) 
+      
+      tutorialData: [],
+      processData: [],
+      methodsData: [],
+      pages: [0, 0, 0],
+      loadingText: "查看更多",
+      showSkeleton: true
+    })
   },
   /**
    * 跳转到文章详细页面
    */
-  jumpToArticle: function () {
+  jumpToArticle: function (e) {
+    let data = e.currentTarget.dataset.item;
+
     wx.navigateTo({
-      url: '../article/article?name=QG.md'
+      url: "../article/article?name=" + data.name + "&title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type
+     
     })
   },
   /**
@@ -71,31 +83,46 @@ Page({
   queryBlogsByPage: function (page) {
     // 需要维护三个页码, 也可以自定义页码
     let nowPage = page || this.data.pages[this.data.blogType];
-    this._getBlog({ 
-      page: page, 
+
+
+    this._getBlog({
+      page: nowPage,
       
-    }, function(res) {
+    }, function (res) {
       wx.stopPullDownRefresh();
       wx.hideNavigationBarLoading();
-      this.setData({
-        tutorialData: res,
-        showSkeleton: false
-      })
     
+      if (this.data.blogType == 0) {
+        this.setData({
+          processData: res,
+          showSkeleton: false
+        })
+      } else if (this.data.blogType == 1) {
+        this.setData({
+          tutorialData: res,
+          showSkeleton: false
+        })
+      } else if (this.data.blogType == 2) {
+        this.setData({
+          methodsData: res,
+          showSkeleton: false
+        })
+      }
     })
   },
   /**
    * 请求云函数
    */
   _getBlog(data, cb, ecb) {
+    
     wx.cloud.callFunction({
-      name: 'queryBlog', 
+      name: 'queryBlog',
       data: {
         page: data.page,
         blogType: this.data.blogType
       },
       success: res => {
-        console.log(res.result.data)
+        console.log(res.result)
         cb.call(this, res.result.data);
       },
       fail: err => {
@@ -112,16 +139,33 @@ Page({
     this.setData({
       loadingText: "正在加载中..."
     })
-    
+
     // 获取当前的页码
     let nowPage = ++this.data.pages[this.data.blogType];
-    
-    this._getBlog({ page: nowPage }, function(res) {
+
+    this._getBlog({ page: nowPage }, function (res) {
       if (res.length) {
-        this.setData({
-          tutorialData: this.data.tutorialData.concat(res),
-          loadingText: '加载更多'
-        })
+        switch(this.data.blogType) {
+          case 0: {
+            this.setData({
+              processData: this.data.processData.concat(res),
+              loadingText: '加载更多'
+            })
+            break;
+          } case 1: {
+            this.setData({
+              tutorialData: this.data.tutorialData.concat(res),
+              loadingText: '加载更多'
+            })
+            break;
+          } case 2: {
+            this.setData({
+              methodsData: this.data.methodsData.concat(res),
+              loadingText: '加载更多'
+            })
+            break;
+          }
+        }
       } else {
         // 找不到更多
         this.setData({
@@ -134,7 +178,7 @@ Page({
     // 请求第一页数据
     this.queryBlogsByPage(1);
   },
-  onReachBottom: function() {
+  onReachBottom: function () {
     // 还缺一个函数节流
     this.loadMoreBlogs();
   }

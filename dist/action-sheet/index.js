@@ -27,7 +27,7 @@ Component({
             value: []
         }
     },
-
+  
     methods: {
         handleClickMask () {
             if (!this.data.maskClosable) return;

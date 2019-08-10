@@ -1,0 +1,109 @@
+<view class='main-container'>
+  <!-- nav begin-->
+  <view class="nav-wrapper" bindtap="turnPage">
+    <view class="nav-item {{isActive == 0 ? 'nav-item-active' : ''}}" data-index="0">业务流程</view>
+    <view class="nav-item {{isActive == 1 ? 'nav-item-active' : ''}}" data-index="1">常用教程</view>
+    <view class="nav-item {{isActive == 2 ? 'nav-item-active' : ''}}" data-index="2">常见故障</view>
+    <view class="nav-item-line" animation="{{animationData}}"></view>
+  </view>
+  <!-- nav end -->
+
+  <view class="tab-content {{isActive == 0 ? 'show' : 'hide'}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{processData}}" data-item="{{item}}">
+      <view class='card-title'>
+        {{item.title}}
+      </view>
+      <view class='card-content'>
+        {{item.content}}
+      </view>
+      <view class='card-footer'>
+        <view class="footer-text">
+          123123阅读
+        </view>
+        <view class="timeStamp-container">
+          {{item.timeStamp}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-content {{isActive == 1 ? 'show' : 'hide'}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{tutorialData}}" data-item="{{item}}">
+      <view class='card-title'>
+        {{item.title}}
+      </view>
+      <view class='card-content'>
+        {{item.content}}
+      </view>
+      <view class='card-footer'>
+        <view class="footer-text">
+          123123阅读
+        </view>
+        <view>
+          {{item.timeStamp}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-content {{isActive == 2 ? 'show' : 'hide'}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{methodsData}}" data-item="{{item}}">
+      <view class='card-title'>
+        {{item.title}}
+      </view>
+      <view class='card-content'>
+        {{item.content}}
+      </view>
+      <view class='card-footer'>
+        <view class="footer-text">
+          123123阅读
+        </view>
+        <view>
+          {{item.timeStamp}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="skeleton-wrapper {{showSkeleton ? 'show' : 'hide'}}">
+    <view class="skeleton-item">
+      <view class="skeleton-title">
+      </view>
+      <view class="skeleton-paragraph" style="width: 100%;">
+      </view>
+      <view class="skeleton-paragraph">
+      </view>
+      <view class="skeleton-footer">
+        <view style="width: 20%;"></view>
+        <view style="width: 40%;"></view>
+      </view>
+    </view>
+    <view class="skeleton-item">
+      <view class="skeleton-title">
+      </view>
+      <view class="skeleton-paragraph" style="width: 100%;">
+      </view>
+      <view class="skeleton-paragraph">
+      </view>
+      <view class="skeleton-footer">
+        <view style="width: 20%;"></view>
+        <view style="width: 40%;"></view>
+      </view>
+    </view>
+    <view class="skeleton-item">
+      <view class="skeleton-title">
+      </view>
+      <view class="skeleton-paragraph" style="width: 100%;">
+      </view>
+      <view class="skeleton-paragraph">
+      </view>
+      <view class="skeleton-footer">
+        <view style="width: 20%;"></view>
+        <view style="width: 40%;"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="load-more" bindtap="loadMoreBlogs">
+    {{loadingText}}
+  </view>
+</view>
