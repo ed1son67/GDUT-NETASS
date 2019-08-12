@@ -131,7 +131,8 @@ Page({
         wx.hideLoading();
         wx.showModal({
           title: '查询失败',
-          content: '服务器开小差了',
+          content: '请检查网络后重试',
+          showCancel: false
         })  
       }
     })

@@ -12,9 +12,7 @@
   left: 30rpx;
   right: 30rpx;
   box-shadow: 0 4px 9px 0px rgba(32,33,36,0.28);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+  
 }
 .form-contaienr {
   height: auto;

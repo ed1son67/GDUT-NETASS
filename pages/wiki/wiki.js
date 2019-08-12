@@ -10,11 +10,9 @@ Page({
     processData: [],
     methodsData: [],
     pages: [1, 0, 0],
-    isActive: 0,
     animationData: {},
     loadingText: "查看更多",
     blogType: 0,
-    loadingStatus: [false, false, false],
     showSkeleton: true
   },
   turnPage: function (e) {
@@ -29,17 +27,13 @@ Page({
       delay: 0
     })
     // 距离左边位置
-    animation.left((index * 33.3) + '%').step()
-    // 设置动画
+    animation.left((index * 33.3) + '%').step();
+    // 设置动画和tab的类型
     this.setData({
-      animationData: animation.export()
+      animationData: animation.export(),
+      blogType: index
     })
-    // 设置对应class
-    this.setData({
-      isActive: index,
-      blogType: index,
-    })
-
+    
     // 判断是否为首次加载
     if (this.data.pages[index] === 0) {
       this.setData({
@@ -47,8 +41,6 @@ Page({
       })
       this.data.pages[index]++;
       this.queryBlogsByPage();
-      // this.data.loadingStatus[0] = true
-      // console.log(this.data.loadingStatus[0]);
     }
   },
   onPullDownRefresh: function () {
@@ -135,7 +127,7 @@ Page({
    * 翻页请求函数
    */
   loadMoreBlogs() {
-
+    
     this.setData({
       loadingText: "正在加载中..."
     })
