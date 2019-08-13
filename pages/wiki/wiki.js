@@ -63,9 +63,8 @@ Page({
    */
   jumpToArticle: function (e) {
     let data = e.currentTarget.dataset.item;
-
     wx.navigateTo({
-      url: "../article/article?name=" + data.name + "&title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type
+      url: "../article/article?name=" + data.title + "&title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type
      
     })
   },

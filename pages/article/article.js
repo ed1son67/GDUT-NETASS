@@ -28,26 +28,42 @@ Page({
     wx.setNavigationBarTitle({
       title: blogTypes[blogType]
     })
-    wx.request({
-      // url: 'http://localhost:8001/blog/' + blogName,
-      url: 'https://www.ed1son.cn/doc/' + blogName,
 
-      success: (res) => {
+    wx.cloud.callFunction({
+      name: 'getBlogDetail',
+      data: {
+        blogName: title,
+        type: blogType
+      },
+      success: res => {
         
-        let articleData = app.towxml.toJson(res.data, 'markdown');
+        if (!res.result) {
+          console.log('找不到该文章');
+          wx.showModal({
+            title: '',
+            content: '找不到该文章',
+          })
+          return;
+        };
+        let articleData = app.towxml.toJson(res.result, 'markdown');
 
         articleData = app.towxml.initData(articleData, {
           base: 'http://ed1son.cn:8001',
           app: this
         });
-        // articleData.them = 'light';
+        
         this.setData({
           article: articleData,
           title: title,
           time: time,
           loading: false
         })
+      },
+      fail: err => {
+
+        console.warn(err);
       }
+
     })
   },
 

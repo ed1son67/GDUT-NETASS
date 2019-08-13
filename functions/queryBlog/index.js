@@ -28,19 +28,16 @@ exports.main = async (event, context) => {
     })
     .skip(page * 10)
     .limit(10)
-    .field({
-      _id: false
-    })
+    // .field({
+    //   "_id": true
+    // })
     .get()
     .then(res => {
       if (res) {
         for (let obj of res.data) {
-          obj.timeStamp = formatTime(obj.timeStamp);
-          console.log(obj.timeStamp);
-          
+          obj.timeStamp = formatTime(obj.timeStamp);          
         }
       }
-
       return res;
     });
 

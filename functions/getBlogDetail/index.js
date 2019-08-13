@@ -5,12 +5,17 @@ cloud.init()
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  const wxContext = cloud.getWXContext()
+  if (!event.blogName) return;
 
-  return {
-    event,
-    openid: wxContext.OPENID,
-    appid: wxContext.APPID,
-    unionid: wxContext.UNIONID,
-  }
+  const fileID = 'cloud://gdut-netassistant-2019.6764-gdut-netassistant-2019-1259771708/blogs/'
+  const paths = ['/业务流程/', '/常用教程/', '常见故障'];
+  return await cloud.downloadFile({
+    fileID: fileID + paths[parseInt(event.type)] + event.blogName + '.md',
+  }).then(res => {
+    let buffer = res.fileContent
+    return buffer.toString('utf8');
+  }).catch(err => {
+    console.warn(err);
+    return "";
+  }) 
 }

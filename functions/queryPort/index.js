@@ -15,10 +15,11 @@ exports.main = async (event, context) => {
     })
     .limit(1)
     .field({
-      _id: false,
       building: false,
       room: false
     })
     .get()
-    .then(res => res.data.length ? res.data[0].ports[event.bed] : "");
+    .then(res => { 
+      return res.data.length ? res.data[0].ports[event.bed] : "";
+    });
 }
