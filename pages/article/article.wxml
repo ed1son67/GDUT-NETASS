@@ -12,12 +12,8 @@
         最后编辑于：{{time}}
       </view>
     </view>
-    <template is="entry" data="{{...article}}" />
+    <template is="entry" data="{{...blog}}" />
     <view class="footer">
-      <!-- <view class="footer-content">
-      <view>最后编辑：</view>
-      <view>{{time}}</view>
-    </view> -->
       <view class="footer-content">
         <view>作者：</view>
         <view>学生网管队</view>

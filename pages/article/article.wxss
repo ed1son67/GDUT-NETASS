@@ -14,7 +14,7 @@ page {
 
 }
 .title {
-  font-size: 50rpx;
+  font-size: 54rpx;
   
 }
 .time {

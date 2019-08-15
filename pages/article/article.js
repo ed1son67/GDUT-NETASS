@@ -1,6 +1,6 @@
 // pages/article/article.js
+const util = require('../../utils/util.js');
 const app = getApp();
-
 
 Page({
 
@@ -8,111 +8,144 @@ Page({
    * 页面的初始数据
    */
   data: {
-    article: {},
+    blog: {},
     title: '',
     time: '',
     loading: true
   },
-  
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-    let blogName = options.name,
-        title = options.title,
-        time = options.time,
-        blogType = options.type
-
-    console.log(options)
-    const blogTypes = ['业务流程', '常用教程', '常见故障'];
-    wx.setNavigationBarTitle({
-      title: blogTypes[blogType]
+  getEntireBlog: function(title) {
+    wx.cloud.callFunction({
+      name: 'getBlog',
+      data: {
+        title: title,
+      },
+      success: res => {
+        if (util.isEmptyObject(res.result)) {
+          console.log('找不到该文章');
+          wx.showModal({
+            title: '',
+            content: '找不到该文章',
+            showCancel:false,
+            success: () => {
+              wx.navigateBack({
+                delta: 1
+              })
+            }
+          })
+          return;
+        };
+        this.setBlogData(res.result);
+      },
+      fail: err => {
+        console.warn(err);
+      }
     })
-
+  },
+  getBlogFile: function(options) {
     wx.cloud.callFunction({
       name: 'getBlogDetail',
       data: {
-        blogName: title,
-        type: blogType
+        title: options.title,
+        type: options.type
       },
       success: res => {
-        
         if (!res.result) {
           console.log('找不到该文章');
           wx.showModal({
             title: '',
             content: '找不到该文章',
+            showCancel: false,
+            success: () => {
+              wx.navigateBack({
+                delta: 1
+              })
+            }
           })
           return;
         };
-        let articleData = app.towxml.toJson(res.result, 'markdown');
-
-        articleData = app.towxml.initData(articleData, {
-          base: 'http://ed1son.cn:8001',
-          app: this
+        this.setBlogData({
+          title: options.title,
+          time: options.time,
+          type: options.type,
+          content: res.result
         });
-        
-        this.setData({
-          article: articleData,
-          title: title,
-          time: time,
-          loading: false
-        })
       },
       fail: err => {
-
         console.warn(err);
+        this.getBlogFailCallBack();
       }
-
     })
   },
+  getBlogFailCallBack: function() {
+    wx.showModal({
+      title: '请求超时',
+      content: '请检查网络后重试',
+      showCancel: false,
+      success: () => {
+        wx.navigateBack({
+          delta: 1
+        })
+      }
+    })
+  },
+  setBlogData: function(data) {
+    let blogData = app.towxml.toJson(data.content, 'markdown');
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
+    const blogTypes = ['业务流程', '常用教程', '常见故障'];
+
+    wx.setNavigationBarTitle({
+      title: blogTypes[data.type]
+    })
+
+    blogData = app.towxml.initData(blogData, {
+      base: 'http://ed1son.cn:8001',
+      app: this
+    });
+    // 绑定点击事件
+    this['event_bind_tap'] = this.tapEventLisenter;
+
+    this.setData({
+      blog: blogData,
+      title: data.title,
+      time: data.time,
+      loading: false
+    })
+  },
+  /** 
+   * 生命周期函数--监听页面加载
    */
-  onReady: function() {
-
+  onLoad: function(options) {
+    if (options.title && options.time && options.type) {
+      this.getBlogFile(options);
+    } else if (options.title) {
+      this.getEntireBlog(options.title)
+    } else {
+      // 请求参数有误
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
+  tapEventLisenter: function(event) {
+    let el = event.target.dataset._el;
+    if (el.tag !== 'navigator') return;
+    let url = el._e.attr.href;
+    console.log(url);
+    wx.showModal({
+      title: '外部链接',
+      content: url,
+      confirmText: '复制',
+      showCancel: false,
+      success: function() {
+        wx.setClipboardData({
+          data: url,
+          success(res) {
+            wx.getClipboardData({
+              success(res) {
+                console.log(res.data) // data
+              }
+            })
+          }
+        })
+      }
+    })
   }
 })

@@ -14,7 +14,7 @@
         {{item.title}}
       </view>
       <view class='card-content'>
-        {{item.content}}
+        {{item.introduce}}
       </view>
       <view class='card-footer'>
         <view class="footer-text">
@@ -33,7 +33,7 @@
         {{item.title}}
       </view>
       <view class='card-content'>
-        {{item.content}}
+        {{item.introduce}}
       </view>
       <view class='card-footer'>
         <view class="footer-text">
@@ -54,7 +54,7 @@
         {{item.title}}
       </view>
       <view class='card-content'>
-        {{item.content}}
+        {{item.introduce}}
       </view>
       <view class='card-footer'>
         <view class="footer-text">
@@ -118,7 +118,7 @@
       </view>
     </view>
   </view>
-
+  
   <view class="load-more {{showSkeleton ? '': 'show'}}" bindtap="loadMoreBlogs" >
     {{loadingText}}
   </view>

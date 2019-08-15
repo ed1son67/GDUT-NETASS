@@ -64,9 +64,9 @@ Page({
   jumpToArticle: function (e) {
     let data = e.currentTarget.dataset.item;
     wx.navigateTo({
-      url: "../article/article?name=" + data.title + "&title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type
-     
+      url: "../article/article?title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type
     })
+    
   },
   /**
    * 查询所有的文章
@@ -74,8 +74,7 @@ Page({
   queryBlogsByPage: function (page) {
     // 需要维护三个页码, 也可以自定义页码
     let nowPage = page || this.data.pages[this.data.blogType];
-
-
+    
     this._getBlog({
       page: nowPage,
       
@@ -107,7 +106,7 @@ Page({
   _getBlog(data, cb, ecb) {
     
     wx.cloud.callFunction({
-      name: 'queryBlog',
+      name: 'getBlogList',
       data: {
         page: data.page,
         blogType: this.data.blogType

@@ -1,8 +1,5 @@
 {
   "usingComponents": {
-    "i-modal": "../../dist/modal/index",
-    "i-checkbox-group": "../../dist/checkbox-group/index",
-    "i-checkbox": "../../dist/checkbox/index",
-    "i-mask": "../../components/mask/index"
+   
   }
 }

@@ -86,7 +86,7 @@ page {
   padding: 14rpx 24rpx;
   border-radius: 40rpx;
   font-size: 30rpx;
-  
+ 
 }
 
 

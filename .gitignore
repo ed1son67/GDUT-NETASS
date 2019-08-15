@@ -1,7 +1,7 @@
 .DS_Store
-functions
-towxml
-cloudfunctionTemplate
+dist
+assets/video.mp4
+
 
 # local env files
 .env.local

@@ -55,11 +55,7 @@ Page({
    * 房间号改变函数
    */
   roomChange: function(e) {
-    let val = e.detail.value;
-    
-    this.setData({
-      room: val
-    })
+    this.data.room = e.detail.value;
   },
   /**
    * 验证输入的数据是否正确
@@ -117,6 +113,7 @@ Page({
           wx.showModal({
             title: '查询失败',
             content: '系统暂时未记录该端口号',
+            showCancel: false
           })  
         } else {
           wx.showModal({
