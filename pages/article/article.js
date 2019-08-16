@@ -11,6 +11,7 @@ Page({
     blog: {},
     title: '',
     time: '',
+    view: 0,
     loading: true
   },
   getEntireBlog: function(title) {
@@ -49,7 +50,7 @@ Page({
         type: options.type
       },
       success: res => {
-        if (!res.result) {
+        if (res.result === false) {
           console.log('找不到该文章');
           wx.showModal({
             title: '',
@@ -67,7 +68,8 @@ Page({
           title: options.title,
           time: options.time,
           type: options.type,
-          content: res.result
+          content: res.result,
+          view: options.view
         });
       },
       fail: err => {
@@ -110,6 +112,13 @@ Page({
       time: data.time,
       loading: false
     })
+    
+    wx.cloud.callFunction({
+      name: 'updateBlog',
+      data: {
+        title: data.title,
+      }
+    })
   },
   /** 
    * 生命周期函数--监听页面加载
@@ -128,24 +137,30 @@ Page({
     let el = event.target.dataset._el;
     if (el.tag !== 'navigator') return;
     let url = el._e.attr.href;
-    console.log(url);
-    wx.showModal({
-      title: '外部链接',
-      content: url,
-      confirmText: '复制',
-      showCancel: false,
-      success: function() {
-        wx.setClipboardData({
-          data: url,
-          success(res) {
-            wx.getClipboardData({
-              success(res) {
-                console.log(res.data) // data
-              }
-            })
-          }
-        })
-      }
-    })
+    
+    if (url.slice(0, 4) == 'http') {
+      wx.showModal({
+        title: '请复制到浏览器打开',
+        content: url,
+        confirmText: '复制',
+        showCancel: false,
+        success: function () {
+          wx.setClipboardData({
+            data: url,
+            success(res) {
+              wx.getClipboardData({
+                success(res) {
+                  console.log(res.data) // data
+                }
+              })
+            }
+          })
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: decodeURI(url)
+      })
+    }
   }
 })

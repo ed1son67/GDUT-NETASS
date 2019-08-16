@@ -67,7 +67,10 @@
     </view>
 
   </view>
-  <view class="tips-container" bindtap="openWiki">
-    找不到端口号？
+  <view class="tips-container">
+    <navigator  url="../article/article?title=关于端口号的一些事">
+      找不到端口号？
+    </navigator> 
   </view>
+  
 </view>

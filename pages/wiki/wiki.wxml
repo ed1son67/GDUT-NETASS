@@ -9,7 +9,7 @@
   <!-- nav end -->
 
   <view class="tab-content  {{blogType == 0 ? 'show' : 'hide'}}">
-    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{processData}}" data-item="{{item}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{blogList[0]}}" data-item="{{item}}">
       <view class='card-title'>
         {{item.title}}
       </view>
@@ -18,7 +18,7 @@
       </view>
       <view class='card-footer'>
         <view class="footer-text">
-          123123阅读
+           {{item.view}}阅读
         </view>
         <view class="timeStamp-container">
           {{item.timeStamp}}
@@ -28,7 +28,7 @@
     
   </view>
   <view class="tab-content {{blogType == 1 ? 'show' : 'hide'}}">
-    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{tutorialData}}" data-item="{{item}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{blogList[1]}}" data-item="{{item}}">
       <view class='card-title'>
         {{item.title}}
       </view>
@@ -37,7 +37,7 @@
       </view>
       <view class='card-footer'>
         <view class="footer-text">
-          123123阅读
+          {{item.view}}阅读
         </view>
         <view>
           {{item.timeStamp}}
@@ -49,7 +49,7 @@
     </view>
   </view>
   <view class="tab-content {{blogType == 2 ? 'show' : 'hide'}}">
-    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{methodsData}}" data-item="{{item}}">
+    <view class='card-item' bindtap='jumpToArticle' wx:key="item.index" wx:for="{{blogList[2]}}" data-item="{{item}}">
       <view class='card-title'>
         {{item.title}}
       </view>
@@ -58,7 +58,7 @@
       </view>
       <view class='card-footer'>
         <view class="footer-text">
-          123123阅读
+           {{item.view}}阅读
         </view>
         <view>
           {{item.timeStamp}}

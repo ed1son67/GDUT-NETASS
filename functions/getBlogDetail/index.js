@@ -17,7 +17,7 @@ exports.main = async (event, context) => {
     return buffer.toString('utf8');
   }).catch(err => {
     console.warn(err);
-    return "";
+    return false;
   }) 
 
 }

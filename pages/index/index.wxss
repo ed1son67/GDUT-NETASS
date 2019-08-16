@@ -1,6 +1,6 @@
 page {
   height: auto;
-  
+  background: #fff;
 }
 .container {
   width: 100%;
@@ -9,8 +9,12 @@ page {
 .header-container {
   color: #fff;
   margin: 0 auto;
-  position: relative;
-  height: 500rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  height: 800rpx;
   background: #2a83ff;
   z-index: -1;
   overflow: hidden;
@@ -44,19 +48,21 @@ page {
 }
 
 .item-container {
-  margin: -120rpx 25rpx 0 25rpx;
+  /* margin: -150rpx 25rpx 50rpx 25rpx; */
+  margin: 380rpx 0 0 0;
   z-index: 9999;
   height: auto;
-  border-radius: 15rpx;
+  border-radius: 30rpx 30rpx 0 0;
   background-color: #fff;
   padding: 30rpx 0 40rpx 0;
-  box-shadow: 0px 4px 9px 0px rgba(32,33,36,0.28);
+  /* box-shadow: 0px 4px 9px 0px rgba(32,33,36,0.28); */
   
 }
 .item {
   margin: 0 20rpx;
   height: auto;
   padding: 0 22rpx 0 22rpx;
+
 }
 .item-header {
   
@@ -74,7 +80,8 @@ page {
 
 .item-content {
   font-size: 32rpx;
-  padding-top: 20rpx;
+  padding: 20rpx 0;
+
 }
 .item-label {
   padding: 5rpx 0;

@@ -1,7 +1,7 @@
 <import src="/towxml/entry.wxml" />
-<view>
+<view class="container">
   <view class="loading-page" wx:if="{{loading}}">
-    <image  src="../../static/images/loading.png"></image>
+    <image src="../../static/images/loading.png"></image>
   </view>
   <view wx:else>
     <view class="header">
@@ -13,13 +13,16 @@
       </view>
     </view>
     <template is="entry" data="{{...blog}}" />
-    <view class="footer">
-      <view class="footer-content">
-        <view>作者：</view>
-        <view>学生网管队</view>
-      </view>
+  </view>
+  <view class="footer">
+    <view class="footer-content">
+      <view>阅读：</view>
+      <view>{{view}}</view>
+    </view>
+
+    <view class="footer-content">
+      <view>作者：</view>
+      <view>学生网管队</view>
     </view>
   </view>
-
-
 </view>

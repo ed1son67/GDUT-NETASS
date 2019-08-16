@@ -20,33 +20,41 @@
       <view class="item-content">
         <view class="">
           <view class="item-label">值班时间：</view>
-          <view class="item-text">每天9:00-11:30、13:40-15:40</view>
+          <view class="item-text">每天8:30 - 12:00、13:30 - 17:00</view>
         </view>
         <view class="">
           <view class="item-label">开户时间：</view>
-          <view class="item-text">每周一、三、五 9:00-11:30、13:40-15:40</view>
+          <view class="item-text">每周一、三、五 9:00 - 11:30、13:40 - 15:40</view>
         </view>
+
       </view>
+    </view>
+
+
+    <view class="item">
+      <view class="item-header">
+        值班地点
+        <image src="../../static/images/location.png"></image>
+      </view>
+      <view class="item-content">
+        <view class="item-text">实验三号楼-712室 网络技术与服务中心</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-header">
+        咨询热线
+        <image src="../../static/images/phone.png"></image>
+      </view>
+      <view class="item-content">
+        <view class="item-text">020-39323866</view>
+      </view>
+    </view>
+
   </view>
 
 
-  <view class="item">
-    <view class="item-header">
-      值班地点
-      <image src="../../static/images/location.png"></image>
-    </view>
-    <view class="item-content">
-      
-          <view class="item-text">实验三号楼-712室 网络技术与服务中心</view>
 
-    </view>
-  </view>
-
-</view>
-
-
-
-<!-- <button bindtap="openMask">openMask</button> -->
+  <!-- <button bindtap="openMask">openMask</button> -->
 </view>
 <i-mask show="{{showMask}}" bind:close="closeMask"></i-mask>
 <!-- <i-modal></i-modal> -->
