@@ -1,52 +1,45 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const util = require('../../utils/util.js');
 
 Page({
   data: {
-    buildings: "",
-    room: '',
-    bed: '',
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    showMask: false
+    showMask: false,
+    maskTitle: '最新通知',
+    maskContent: '你好',
+    notices: []
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    
+    util.getNotices(0, this.setNotices);
   },
+  setNotices: function(res) {
+    
+      console.log(res);
+      this.setData({
+        notices: res
+      })
+    
+  },
+  // getNotice: function(){
+  //   wx.cloud.callFunction({
+  //     name: "getLatestNotices",
+  //     data: {
+  //       tab: 1
+  //     },
+  //     success: function(res) {
+  //       let data = res.result.data;
+  //       for (let notice of data) {
+  //         console.log(notice);
+  //       }
+  //     },
+  //     fail: function() {
+
+  //     }
+  //   })
+  // },
   openMask: function() {
     this.setData({
       showMask: true
@@ -56,5 +49,11 @@ Page({
     this.setData({
       showMask: false
     })
+  },
+  onShareAppMessage: function(res) {
+    return {
+      title: '',
+      
+    }
   }
 })

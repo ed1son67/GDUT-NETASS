@@ -37,7 +37,7 @@
         <image src="../../static/images/location.png"></image>
       </view>
       <view class="item-content">
-        <view class="item-text">实验三号楼-712室 网络技术与服务中心</view>
+        <view class="item-text">实验三号楼-712室</view>
       </view>
     </view>
     <view class="item">
@@ -56,5 +56,13 @@
 
   <!-- <button bindtap="openMask">openMask</button> -->
 </view>
-<i-mask show="{{showMask}}" bind:close="closeMask"></i-mask>
-<!-- <i-modal></i-modal> -->
+
+<i-mask 
+  wx:for="{{notices}}"
+  wx:key="item.index"
+  show="{{true}}" 
+  bind:close="closeMask"
+  title="{{maskTitle}}"
+  content="{{maskContent}}"
+  showTitle="{{false}}"
+  ></i-mask>

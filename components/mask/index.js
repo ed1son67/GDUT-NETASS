@@ -7,6 +7,18 @@ Component({
     show: {
       type: Boolean,
       value: false
+    },
+    title: {
+      type: String,
+      value: ''
+    },
+    content: {
+      type:String,
+      value: '' 
+    },
+    showTitle: {
+      type: Boolean,
+      value: true
     }
   },
 

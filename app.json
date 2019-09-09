@@ -1,10 +1,12 @@
 {
   "pages": [
+    
     "pages/index/index",
     
     "pages/wiki/wiki",
     "pages/port/port",
     "pages/article/article"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

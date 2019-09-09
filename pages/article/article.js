@@ -110,6 +110,7 @@ Page({
       blog: blogData,
       title: data.title,
       time: data.time,
+      view: data.view,
       loading: false
     })
     
@@ -161,6 +162,14 @@ Page({
       wx.navigateTo({
         url: decodeURI(url)
       })
+    }
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: this.data.title,
+      path: "/pages/article/article?title=" + this.data.title
+      // path: "/pages/index/index"
+
     }
   }
 })

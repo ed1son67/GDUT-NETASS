@@ -133,5 +133,11 @@ Page({
         })  
       }
     })
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '端口查询',
+      path: ''
+    }
   }
 })

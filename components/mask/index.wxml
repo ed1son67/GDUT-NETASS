@@ -3,7 +3,15 @@
     <view class="mask-close" bindtap="closeMask">
       <image src="../../static/images/close.png"></image>
     </view>
+
+    <view wx:if="{{showTitle}}" class="mask-title">
+        {{title}}
+      </view>
     <view class="mask-content">
+      
+    
+        {{content}}
+      
     </view>
   </view>
 </view>

@@ -8,12 +8,12 @@ const db = cloud.database()
 const formatTime = time => {
   let year = time.getFullYear(),
     mouth = time.getMonth() + 1,
-    day = time.getDate(),
+    day = time.getDate();
     // 云函数的时区是utc+0的，本地是+8的，所以要+8
-    hour = time.getHours() + 8
-    minutes = time.getMinutes()
+    // hour = time.getHours() + 8
+    // minutes = time.getMinutes()
 
-  return year + '/' + mouth + '/' + day + ' ' + hour  + ':' + minutes;
+  return year + '/' + mouth + '/' + day;
     
 }
 // 云函数入口函数
