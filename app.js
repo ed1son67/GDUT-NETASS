@@ -10,10 +10,6 @@ App({
   onLaunch: function () {
     wx.cloud.init();
   },
-  towxml: new Towxml(),
-  globalData: {
-    userInfo: null
-  },
-  
+  towxml: new Towxml()
 })
 
