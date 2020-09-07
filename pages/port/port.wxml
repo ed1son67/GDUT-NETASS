@@ -14,7 +14,7 @@
         </view>
         <view class="item {{building == '请选择楼栋' ? '': 'active'}}">
           <picker 
-            value='{{buildingIndex}}' 
+            value='{{buildingIndex}}'
             range='{{buildingData}}' 
             mode="multiSelector" bindchange="buildingChange" 
             bindcolumnchange="buildingColumnChange"
@@ -61,16 +61,15 @@
       </view>
     </view>
     <view class='button-container'>
-      <button bindtap='seachPort'>
+      <button bindtap='searchPort'>
         查询端口
       </button>
     </view>
 
   </view>
   <view class="tips-container">
-    <navigator  url="../article/article?title=关于端口号的一些事">
+    <navigator url='{{articleURL}}'>
       找不到端口号？
     </navigator> 
   </view>
-  
 </view>

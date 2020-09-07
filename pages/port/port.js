@@ -1,11 +1,12 @@
 // pages/port/port.js
 import { isEmptyObject } from '../../utils/util.js'
-Page({
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
+    articleURL: '../article/article?title=关于端口号的一些事',
     buildingIndex: [0, 0],
     buildingData: [
       ['生活西区', '生活东区'], ['西一', '西二', '西三', '西四', '西五', '西六', '西七', '西八','西九','西十','西十一','西十二','西十三','西十四']
@@ -87,8 +88,7 @@ Page({
   /**
    * 搜索端口函数
    */
-  seachPort: function() {
-
+  searchPort: function() {
     if (!this.verifyInput()) {
       wx.showToast({
         title: '请检查你的输入',
