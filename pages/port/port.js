@@ -1,5 +1,4 @@
 // pages/port/port.js
-import { isEmptyObject } from '../../utils/util.js'
 
 Page({
   /**
@@ -46,7 +45,6 @@ Page({
    * 楼栋值改变触发函数
    */
   buildingChange: function(e) {
-    
     this.setData({
       buildingIndex: e.detail.value,
       building: this.data.buildingData[0][e.detail.value[0]] + '，' + this.data.buildingData[1][e.detail.value[1]]
@@ -62,7 +60,12 @@ Page({
    * 验证输入的数据是否正确
    */
   verifyInput() {
-    if ((this.data.room === '' || this.data.room.length < 3) || this.data.bed === '请选择床号' || this.data.building === '请选择楼栋') 
+    if (
+        this.data.room === '' ||
+        this.data.room.length < 3 ||
+        this.data.bed === '请选择床号' ||
+        this.data.building === '请选择楼栋'
+    )
       return false;
     else 
       return true;
@@ -71,19 +74,14 @@ Page({
    * 转换数据的正确格式
    */
   getInputData() {
-    let data = {};
-
-    let queryData = {
-      bed: this.data.bed,
-      room: this.data.room,
-      building: this.data.building
+    const { room, building, bed } = this.data;
+    const queryData = {
+      bed: ['一号床', '二号床', '三号床', '四号床'].indexOf(bed),
+      building: building.slice(6),
+      room
     }
-    data['room'] = this.data.room;
-    data['building'] = this.data.building.slice(6);
-    data['bed'] = ['一号床', '二号床', '三号床', '四号床'].indexOf(this.data.bed);
-    
-    console.log(data);
-    return data;
+    console.log('queryData', queryData);
+    return queryData;
   },
   /**
    * 搜索端口函数
@@ -130,7 +128,7 @@ Page({
           title: '查询失败',
           content: '请检查网络后重试',
           showCancel: false
-        })  
+        })
       }
     })
   },
