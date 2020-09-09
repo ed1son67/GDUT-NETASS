@@ -6,17 +6,6 @@ const GET_BLOG = 'getBlog';
 const QUERY_PORT = 'queryPort';
 const GET_BLOG_DETAIL = 'getBlogDetail';
 
-const cloudFunction = ({ name, data }) => {
-  return wx.cloud.callFunction({
-    name,
-    data
-  }).catch((err) => {
-    // 全局的一个错误拦截处理器
-    // 记得reject出去，不然后面的catch拿不到err
-    Promise.reject(err);
-  });
-}
-
 const getBlogDetail = (data) => {
   return wx.cloud.callFunction({
     name: GET_BLOG_DETAIL,
@@ -31,9 +20,6 @@ const getBlog = (data) => {
   });
 }
 
-/**
- * 获取博客的列表
- */
 const getBlogList = (data) => {
   return wx.cloud.callFunction({
     name: GET_BLOG_LIST,
@@ -41,18 +27,16 @@ const getBlogList = (data) => {
   })
 }
 
-const getPort = ({page, blogType}) => {
+const getPort = (data) => {
   return wx.cloud.callFunction({
     name: QUERY_PORT,
-    data: {
-      page,
-      blogType
-    }
+    data
   })
 }
 
 module.exports = {
   getBlogList,
   getBlogDetail,
-  getBlog
+  getBlog,
+  getPort
 }

@@ -1,4 +1,5 @@
 // pages/port/port.js
+const api = require('../../api/index');
 
 Page({
   /**
@@ -65,10 +66,11 @@ Page({
         this.data.room.length < 3 ||
         this.data.bed === '请选择床号' ||
         this.data.building === '请选择楼栋'
-    )
+    ) {
       return false;
-    else 
+    } else {
       return true;
+    }
   },
   /**
    * 转换数据的正确格式
@@ -95,42 +97,36 @@ Page({
       return;
     };
 
-    let queryData = this.getInputData();
+    const queryData = this.getInputData();
 
     wx.showLoading({
       title: '查询中',
       mask: true
-    })
-    
-    wx.cloud.callFunction({
-      name: 'queryPort',
-      data: queryData,
-      success(res) {
-        wx.hideLoading();
-        if (res.result === "") {
-          wx.showModal({
-            title: '查询失败',
-            content: '系统暂时未记录该端口号',
-            showCancel: false
-          })  
-        } else {
-          wx.showModal({
-            title: '您的端口号是：',
-            content: res.result,
-            showCancel: false
-          })  
-        }  
-      },
-      fail(err) {
-        console.log(err);
-        wx.hideLoading();
+    });
+    api.getPort(queryData).then((res) => {
+      wx.hideLoading();
+      if (res.result === "") {
         wx.showModal({
           title: '查询失败',
-          content: '请检查网络后重试',
+          content: '系统暂时未记录该端口号',
           showCancel: false
-        })
+        })  
+      } else {
+        wx.showModal({
+          title: '您的端口号是：',
+          content: res.result,
+          showCancel: false
+        })  
       }
-    })
+    }).catch((err) =>{
+      console.log(err);
+      wx.hideLoading();
+      wx.showModal({
+        title: '查询失败',
+        content: '请检查网络后重试',
+        showCancel: false
+      })
+    });
   },
   onShareAppMessage: function (res) {
     return {
