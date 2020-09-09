@@ -2,7 +2,9 @@
  * 导出所有的云函数
  */
 const GET_BLOG_LIST = 'getBlogList';
+const GET_BLOG = 'getBlog';
 const QUERY_PORT = 'queryPort';
+const GET_BLOG_DETAIL = 'getBlogDetail';
 
 const cloudFunction = ({ name, data }) => {
   return wx.cloud.callFunction({
@@ -15,13 +17,27 @@ const cloudFunction = ({ name, data }) => {
   });
 }
 
-const getBlogList = ({page, blogType}) => {
+const getBlogDetail = (data) => {
+  return wx.cloud.callFunction({
+    name: GET_BLOG_DETAIL,
+    data
+  })
+}
+
+const getBlog = (data) => {
+  return wx.cloud.callFunction({
+    name: GET_BLOG,
+    data
+  });
+}
+
+/**
+ * 获取博客的列表
+ */
+const getBlogList = (data) => {
   return wx.cloud.callFunction({
     name: GET_BLOG_LIST,
-    data: {
-      page,
-      blogType
-    }
+    data
   })
 }
 
@@ -36,5 +52,7 @@ const getPort = ({page, blogType}) => {
 }
 
 module.exports = {
-  getBlogList
+  getBlogList,
+  getBlogDetail,
+  getBlog
 }

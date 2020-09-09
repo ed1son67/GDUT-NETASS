@@ -1,9 +1,9 @@
 // pages/article/article.js
 const util = require('../../utils/util.js');
 const app = getApp();
+const api = require('../../api/index');
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -15,12 +15,9 @@ Page({
     loading: true
   },
   getEntireBlog: function(title) {
-    wx.cloud.callFunction({
-      name: 'getBlog',
-      data: {
-        title: title,
-      },
-      success: res => {
+    api.getBlog({
+      title
+    }).then((res) => {
         if (util.isEmptyObject(res.result)) {
           console.log('找不到该文章');
           wx.showModal({
@@ -36,47 +33,39 @@ Page({
           return;
         };
         this.setBlogData(res.result);
-      },
-      fail: err => {
-        console.warn(err);
-      }
+    }).catch((err) => {
+      console.error(err);
     })
   },
-  getBlogFile: function(options) {
-    wx.cloud.callFunction({
-      name: 'getBlogDetail',
-      data: {
-        title: options.title,
-        type: options.type
-      },
-      success: res => {
-        if (res.result === false) {
-          console.log('找不到该文章');
-          wx.showModal({
-            title: '',
-            content: '找不到该文章',
-            showCancel: false,
-            success: () => {
-              wx.navigateBack({
-                delta: 1
-              })
-            }
-          })
-          return;
-        };
-        this.setBlogData({
-          title: options.title,
-          time: options.time,
-          type: options.type,
-          content: res.result,
-          view: options.view
-        });
-      },
-      fail: err => {
-        console.warn(err);
-        this.getBlogFailCallBack();
+  getBlogFile: function({ title, type, time, view }) {
+    api.getBlogDetail({
+      title,
+      type
+    }).then((res) => {
+      if (!res.result) {
+        console.log('找不到该文章');
+        wx.showModal({
+          title: '',
+          content: '找不到该文章',
+          showCancel: false,
+          success: () => {
+            wx.navigateBack({
+              delta: 1
+            })
+          }
+        })
+        return;
       }
-    })
+      this.setBlogData({
+        content: res.result,
+        title,
+        time,
+        type,
+        view
+      });
+    }).catch((err) => {
+      this.getBlogFailCallBack();
+    });
   },
   getBlogFailCallBack: function() {
     wx.showModal({
@@ -136,7 +125,9 @@ Page({
 
   tapEventLisenter: function(event) {
     let el = event.target.dataset._el;
-    if (el.tag !== 'navigator') return;
+    if (el.tag !== 'navigator') {
+      return;
+    };
     let url = el._e.attr.href;
     
     if (url.slice(0, 4) == 'http') {
@@ -165,11 +156,10 @@ Page({
     }
   },
   onShareAppMessage: function (res) {
+    const { title } = this.data;
     return {
-      title: this.data.title,
-      path: "/pages/article/article?title=" + this.data.title
-      // path: "/pages/index/index"
-
+      path: "/pages/article/article?title=" + title,
+      title
     }
   }
 })
