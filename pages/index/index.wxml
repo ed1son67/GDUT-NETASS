@@ -1,7 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- <view class="background"></view> -->
-
   <view class='header-container'>
     <view class='title-container'>
       <view class="title">欢迎使用</view>
@@ -18,18 +16,20 @@
         <image src="../../static/images/calendar.png"></image>
       </view>
       <view class="item-content">
-        <view class="">
-          <view class="item-label">值班时间：</view>
-          <view class="item-text">每天8:30 - 12:00、13:30 - 17:00</view>
+        <view>
+          <view class="item-label">咨询、报障时间：</view>
+          <view class="item-text">每天8:30 - 21:30</view>
         </view>
-        <view class="">
-          <view class="item-label">开户时间：</view>
+        <view>
+          <view class="item-label">网上续费开放时间：</view>
+          <view class="item-text">每天8:00 - 22:00</view>
+        </view>
+        <view>
+          <view class="item-label">报装、续费时间：</view>
           <view class="item-text">每周一、三、五 9:00 - 11:30、13:40 - 15:40</view>
         </view>
-
       </view>
     </view>
-
 
     <view class="item">
       <view class="item-header">
@@ -40,7 +40,6 @@
         <view class="item-text">大学城校区 实验三号楼-712室</view>
         <!-- <view class="item-text">龙洞校区 实验三号楼-712室</view>
         <view class="item-text">东风路校区 实验三号楼-712室</view> -->
-
       </view>
     </view>
     <view class="item">
@@ -49,9 +48,17 @@
         <image src="../../static/images/phone.png"></image>
       </view>
       <view class="item-content">
-        <view class="item-text">020-39323866</view>
+        <view class="item-text" bindtap="copyWebSite" data-copy="020-39323866">020-39323866</view>
       </view>
     </view>
-
+    <view class="item">
+      <view class="item-header">
+        网上续费地址
+        <image src="../../static/images/phone.png"></image>
+      </view>
+      <view class="item-content">
+        <view class="item-text" bindtap="copyWebSite" data-copy="http://ehall.gdut.cn">http://ehall.gdut.cn</view>
+      </view>
+    </view>
   </view>
 </view>
