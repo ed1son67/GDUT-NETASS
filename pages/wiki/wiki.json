@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "WIKI",
-  "usingComponents": {},
   "navigationBarBackgroundColor": "#fff",
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
