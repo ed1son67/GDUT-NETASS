@@ -54,7 +54,7 @@
     <view class="item">
       <view class="item-header">
         网上续费地址
-        <image src="../../static/images/phone.png"></image>
+        <image src="../../static/images/link.png"></image>
       </view>
       <view class="item-content">
         <view class="item-text" bindtap="copyWebSite" data-copy="http://ehall.gdut.cn">http://ehall.gdut.cn</view>
