@@ -28,9 +28,6 @@ exports.main = async (event, context) => {
     })
     .skip(page * 10)
     .limit(10)
-    .field({
-      "_id": false
-    })
     .get()
     .then(res => {
       if (res) {
