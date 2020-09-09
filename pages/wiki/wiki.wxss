@@ -148,7 +148,7 @@
   display: none;
 }
 .readTag {
-  /* display: inline-block; */
+  display: inline-block;
   font-size: 24rpx;
   background: #f3f4f9;
   color: #4166b0;

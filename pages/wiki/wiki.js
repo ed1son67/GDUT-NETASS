@@ -98,37 +98,30 @@ Page({
    */
   jumpToArticle: function(e) {
     let data = e.currentTarget.dataset.item;
-    let _this = this;
 
     wx.navigateTo({
       url: "../article/article?title=" + data.title + "&time=" + data.timeStamp + "&type=" + data.type + "&view=" + data.view,
-      success: function() {
-        _this.setBlogReadType(data.title);
-      }
     });
-    
   },
   setBlogReadType: function(title) {
-    let _this = this;
     wx.getStorage({
       key: 'read',
-      success: function (res) {
-        let readData = res.data;
-        
-        if (readData.indexOf(title) !== -1) {
+      success: (res) => {
+        if (res && res.data && res.data.indexOf(title) !== -1) {
           return;
         }
-        readData.push(title);
+        const { blogList, blogType } = this.data.blogType;
+        const readData = res.data;
 
-        _this.data.blogList[_this.data.blogType].forEach(function (item, index) {
+        readData.push(title);
+        blogList[blogType].forEach((item, index) => {
           if (title === item.title) {
-            let key = 'blogList[' + _this.data.blogType + ']' + '[' + index + ']' + '.hadRead';
+            let key = 'blogList[' + blogType + ']' + '[' + index + ']' + '.hadRead';
             setTimeout(function() {
-              _this.setData({
+              this.setData({
                 [key]: true
               })
-            }, 1000)
-            
+            }, 1000) 
           }
         })
         wx.setStorage({
@@ -219,7 +212,7 @@ Page({
   onShareAppMessage: function(res) {
     return {
       title: '欢迎使用校园网wiki',
-      path: 'pages/wiki/index'
+      path: 'pages/wiki/wiki'
     }
   }
 })
