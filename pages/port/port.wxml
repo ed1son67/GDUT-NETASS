@@ -27,7 +27,6 @@
       <view class='form-item'>
         <view class='label'>
           <image class="label-icon" src="../../static/images/room.png"></image>
-
           房间号
         </view>
         <view class='item' >
@@ -44,7 +43,6 @@
       <view class='form-item'>
         <view class='label'>
           <image class="label-icon" src="../../static/images/bed.png"></image>
-
           床号
         </view>
         <view class="item {{bed == '请选择床号' ? '': 'active'}}" >

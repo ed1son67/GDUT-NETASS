@@ -89,7 +89,6 @@ Page({
     })
 
     blogData = app.towxml.initData(blogData, {
-      base: 'http://ed1son.cn:8001',
       app: this
     });
     // 绑定点击事件
@@ -122,7 +121,6 @@ Page({
       // 请求参数有误
     }
   },
-
   tapEventLisenter: function(event) {
     let el = event.target.dataset._el;
     if (el.tag !== 'navigator') {
