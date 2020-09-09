@@ -1,8 +1,6 @@
 //logs.js
 const app = getApp();
-import {
-  baseUrl
-} from '../../utils/util.js';
+const api = require('../../api/index');
 
 Page({
   data: {
@@ -51,13 +49,10 @@ Page({
       this.queryBlogsByPage();
 
     }
-
-
   },
-
   refleshBlogReadType: function() {
     let _this = this;
-
+    console.log(_this)
     wx.getStorage({
       key: 'read',
       success: function(res) {
@@ -146,87 +141,75 @@ Page({
   /**
    * 查询所有的文章
    */
-  queryBlogsByPage: function() {
+  async queryBlogsByPage() {
     // 需要维护三个页码, 也可以自定义页码
-    let nowPage = this.data.pages[this.data.blogType];
-
-    this._getBlog({
-      page: nowPage,
-
-    }, function(res) {
-      wx.stopPullDownRefresh();
-      wx.hideNavigationBarLoading();
-
-      let key = 'blogList[' + this.data.blogType + ']';
-      this.setData({
-        [key]: res,
-        showSkeleton: false
-      });
-      // 设置文章的阅读状态
-      this.refleshBlogReadType();
-    })
+    const blogType = this.data.blogType;
+    const nowPage = this.data.pages[blogType];
+    const data = await this.getBlogList({ page: nowPage });
+    console.log(data);
+    wx.stopPullDownRefresh();
+    wx.hideNavigationBarLoading();
+    let key = 'blogList[' + blogType + ']';
+    this.setData({
+      [key]: data,
+      showSkeleton: false
+    });
+    // 设置文章的阅读状态
+    this.refleshBlogReadType();
   },
-  /**
-   * 请求云函数
-   */
-  _getBlog(data, cb, ecb) {
-    console.log(data.page)
-    wx.cloud.callFunction({
-      name: 'getBlogList',
-      data: {
-        page: data.page,
-        blogType: this.data.blogType
-      },
-      success: res => {
-        // console.log(res.result)
-        cb.call(this, res.result.data);
-      },
-      fail: err => {
-        if (ecb) ecb.call(this, err);
-        console.err
-      }
+  getBlogList({ page, blogType }) {
+    return api.getBlogList({
+      blogType,
+      page
+    }).then((res) =>{
+      return res.result.data
     })
   },
   /**
    * 翻页请求函数
    */
-  loadMoreBlogs() {
-    if (!this.data.loadingStatus[this.data.blogType]) return;
+  async loadMoreBlogs() {
+    if (!this.data.loadingStatus[this.data.blogType]) {
+      return;
+    };
 
     this.setData({
       loadingText: "正在加载中..."
     })
 
     // 获取当前的页码
-    let nowPage = ++this.data.pages[this.data.blogType];
-
-    this._getBlog({
-      page: nowPage
-    }, function(res) {
-      if (res.length) {
-
-        let key = 'blogList[' + this.data.blogType + ']';
-
-        this.setData({
-          [key]: this.data.blogList[0].concat(res),
-          loadingText: '加载更多'
-        })
-      } else {
-        // 找不到更多
-        this.setData({
-          loadingText: "找不到更多了",
-        })
-        this.data.loadingStatus[this.data.blogType] = false;
-      }
-    });
+    const blogType = this.data.blogType;
+    const nowPage = ++this.data.pages[blogType];
+    const data = await this.getBlogList({ page: nowPage, blogType });
+    if (data.length) {
+      const key = 'blogList[' + blogType + ']';
+      this.setData({
+        [key]: this.data.blogList[0].concat(data),
+        loadingText: '加载更多'
+      })
+    } else {
+      // 找不到更多
+      this.setData({
+          loadingText: "已到达底部～",
+      })
+      this.data.loadingStatus[blogType] = false;
+    }
   },
   onLoad: function() {
     // 请求第一页数据
     this.queryBlogsByPage();
     // 设置本地已读列表缓存
-    wx.setStorage({
+    wx.getStorage({
       key: 'read',
-      data: [],
+      success: function(res) {
+
+      },
+      fail: function() {
+        wx.setStorage({
+          key: 'read',
+          data: [],
+        })
+      }
     })
   },
   onReachBottom: function() {
@@ -235,8 +218,8 @@ Page({
   },
   onShareAppMessage: function(res) {
     return {
-      title: '网管手册',
-      path: ''
+      title: '欢迎使用校园网wiki',
+      path: 'pages/wiki/index'
     }
   }
 })
