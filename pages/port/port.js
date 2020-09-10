@@ -131,7 +131,7 @@ Page({
   onShareAppMessage: function (res) {
     return {
       title: '欢迎使用校园网端口查询服务',
-      path: 'pages/port/index'
+      path: 'pages/port/port'
     }
   }
 })
