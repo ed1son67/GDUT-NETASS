@@ -47,7 +47,6 @@ Page({
         showSkeleton: true,
       })
       this.queryBlogsByPage();
-
     }
   },
   refleshBlogReadType: function() {
@@ -138,7 +137,8 @@ Page({
     // 需要维护三个页码, 也可以自定义页码
     const blogType = this.data.blogType;
     const nowPage = this.data.pages[blogType];
-    const data = await this.getBlogList({ page: nowPage });
+    console.log(blogType);
+    const data = await this.getBlogList({ page: nowPage, blogType });
     console.log(data);
     wx.stopPullDownRefresh();
     wx.hideNavigationBarLoading();
@@ -150,7 +150,7 @@ Page({
     // 设置文章的阅读状态
     this.refleshBlogReadType();
   },
-  getBlogList({ page, blogType }) {
+  async getBlogList({ page, blogType }) {
     return api.getBlogList({
       blogType,
       page

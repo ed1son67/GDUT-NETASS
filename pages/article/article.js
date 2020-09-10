@@ -64,20 +64,17 @@ Page({
         view
       });
     }).catch((err) => {
-      this.getBlogFailCallBack();
+      wx.showModal({
+        title: '请求超时',
+        content: '请检查网络后重试',
+        showCancel: false,
+        success: () => {
+          wx.navigateBack({
+            delta: 1
+          })
+        }
+      })
     });
-  },
-  getBlogFailCallBack: function() {
-    wx.showModal({
-      title: '请求超时',
-      content: '请检查网络后重试',
-      showCancel: false,
-      success: () => {
-        wx.navigateBack({
-          delta: 1
-        })
-      }
-    })
   },
   setBlogData: function(data) {
     let blogData = app.towxml.toJson(data.content, 'markdown');
@@ -113,12 +110,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    if (options.title && options.time && options.type) {
+    console.log(options);
+    const { title, time, type } = options;
+    if (title && time && type) {
       this.getBlogFile(options);
-    } else if (options.title) {
-      this.getEntireBlog(options.title)
     } else {
-      // 请求参数有误
+        wx.showModal({
+          title: '',
+          content: '找不到该文章',
+          showCancel: false,
+          success: () => {
+            wx.navigateBack({
+              delta: 1
+            })
+          }
+        })
+      return console.log('找不到该文章');
     }
   },
   tapEventLisenter: function(event) {
