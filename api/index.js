@@ -5,6 +5,7 @@ const GET_BLOG_LIST = 'getBlogList';
 const GET_BLOG = 'getBlog';
 const QUERY_PORT = 'queryPort';
 const GET_BLOG_DETAIL = 'getBlogDetail';
+const GET_BLOG_INFO = 'getBlogInfo';
 
 const getBlogDetail = (data) => {
   return wx.cloud.callFunction({
@@ -34,9 +35,17 @@ const getPort = (data) => {
   })
 }
 
+const getBlogInfo = (data) => {
+  return wx.cloud.callFunction({
+    name: GET_BLOG_INFO,
+    data
+  })
+}
+
 module.exports = {
   getBlogList,
   getBlogDetail,
   getBlog,
-  getPort
+  getPort,
+  getBlogInfo
 }

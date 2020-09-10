@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    articleURL: '../article/article?title=关于端口号的一些事&type=1&time=2020/9/10',
+    articleURL: '../article/article?title=关于端口号的那些事&type=1&time=2020/9/10',
     buildingIndex: [0, 0],
     buildingData: [
       ['生活西区', '生活东区'], ['西一', '西二', '西三', '西四', '西五', '西六', '西七', '西八','西九','西十','西十一','西十二','西十三','西十四']

@@ -14,33 +14,9 @@ Page({
     view: 0,
     loading: true
   },
-  getEntireBlog: function(title) {
-    api.getBlog({
-      title
-    }).then((res) => {
-        if (util.isEmptyObject(res.result)) {
-          console.log('找不到该文章');
-          wx.showModal({
-            title: '',
-            content: '找不到该文章',
-            showCancel:false,
-            success: () => {
-              wx.navigateBack({
-                delta: 1
-              })
-            }
-          })
-          return;
-        };
-        this.setBlogData(res.result);
-    }).catch((err) => {
-      console.error(err);
-    })
-  },
-  getBlogFile: function({ title, type, time, view }) {
+  getBlogDetail: function(title) {
     api.getBlogDetail({
       title,
-      type
     }).then((res) => {
       if (!res.result) {
         console.log('找不到该文章');
@@ -56,14 +32,17 @@ Page({
         })
         return;
       }
+      const { content, type, time, view } = res.result;
+      console.log(res.result);
       this.setBlogData({
-        content: res.result,
+        content,
         title,
         time,
         type,
         view
       });
     }).catch((err) => {
+      console.log(err);
       wx.showModal({
         title: '请求超时',
         content: '请检查网络后重试',
@@ -106,14 +85,14 @@ Page({
       }
     })
   },
-  /** 
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function(options) {
-    console.log(options);
-    const { title, time, type } = options;
-    if (title && time && type) {
-      this.getBlogFile(options);
+    this.initData(options);
+  },
+  initData: async function (options) {
+    const { title } = options;
+    console.log(title);
+    if (title) {
+      await this.getBlogDetail(title);
     } else {
         wx.showModal({
           title: '',
